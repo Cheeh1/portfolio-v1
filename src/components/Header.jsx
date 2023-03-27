@@ -2,6 +2,11 @@ import React from "react";
 import { moon, github, linkedin, instagram, twitter, picture, crown, app, globe } from '../assets'
 
 const Header = () => {
+
+    const handleDownload = () => {
+        window.open('../assets/Divine-Edwin-Resume.pdf', '_blank', 'download')
+    }
+    
     return (
         <>
             <nav className="flex justify-between items-center px-10 my-5 font-inter">
@@ -16,7 +21,7 @@ const Header = () => {
 
                 <div className="flex gap-x-5">
                     <img className="cursor-pointer" src={moon} alt="moon-icon" />
-                    <button className="border rounded-lg px-3 py-2 font-semibold text-cinder-dark font-inter">Resume</button>
+                    <button onClick={handleDownload} className="border rounded-lg px-3 py-2 font-semibold text-cinder-dark font-inter">Resume</button>
                 </div>
             </nav>
 
@@ -43,7 +48,7 @@ const Header = () => {
                 </div>
             </section>
 
-            <section className=" flex flex-col gap-20 p-20 bg-[#FBFBFB]">
+            <section className=" flex flex-col gap-20 p-20 bg-[#FBFBFB]" id="services">
                 <div className="flex flex-col gap-2 items-center">
                     <div className="flex gap-3">
                         <p className="border-2 w-4 h-1 my-2.5 text-[#D9D9D9]"></p>
@@ -52,7 +57,7 @@ const Header = () => {
                     <p className="text-cinder-dark font-bold text-3xl font-pjs ml-20">Specialized in</p>
                 </div>
 
-                <div className="flex gap-20 justify-evenly">
+                <div className="flex gap-20">
                     <div className="flex flex-col justify-center gap-3 items-center bg-white py-10 px-10 border rounded-md">
                         <img className="border rounded-lg bg-[#F5F3FE] p-3 w-12" src={crown} alt="crown" />
                         <p className="font-pjs text-sm">UI/UX Design</p>
