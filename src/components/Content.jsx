@@ -1,5 +1,5 @@
 import React from 'react'
-import { item1, item2, item3, link } from '../assets'
+import { item1, item2, item3, link, github, globe } from '../assets'
 
 const Content = () => {
     return (
@@ -22,6 +22,7 @@ const Content = () => {
                             <div className='flex gap-5 items-center'>
                                 <span className="text-sm border text-cinder-light rounded-md p-2">Wordpress</span>
                                 <a href='#link1' target="_blank"><img src={link} alt="link-icon" /></a>
+                                <a href='#github' target="_blank"><img src={github} alt="link-icon" /></a>
                             </div>
                         </div>
                     </div>
@@ -33,6 +34,7 @@ const Content = () => {
                             <div className='flex gap-5 items-center'>
                                 <span className="text-sm text-cinder-light border rounded-md p-2">React</span>
                                 <a href='#link2' target="_blank"><img src={link} alt="link-icon" /></a>
+                                <a href='#github' target="_blank"><img src={github} alt="link-icon" /></a>
                             </div>
                         </div>
                     </div>
@@ -44,6 +46,7 @@ const Content = () => {
                             <div className='flex gap-5 items-center'>
                                 <span className="text-sm text-cinder-light border rounded-md p-2">PHP</span>
                                 <a href='#link3' target="_blank"><img src={link} alt="link-icon" /></a>
+                                <a href='#github' target="_blank"><img src={github} alt="link-icon" /></a>
                             </div>
                         </div>
                     </div>
