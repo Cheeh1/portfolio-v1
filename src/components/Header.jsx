@@ -25,14 +25,14 @@ const Header = () => {
                 </div>
             </nav>
 
-            <section className="flex my-40 mx-24 ">
+            <section className="flex my-40 mx-24 justify-between items-center">
                 <div className="flex flex-col gap-5">
                     <div className="flex gap-3">
                         <p className="border-2 w-4 h-1 my-2 text-[#D9D9D9]"></p>
                         <p className="text-sm font-light text-cinder-light tracking-widest font-inter">MY NAME IS</p>
                     </div>
                     <h1 className="text-cinder-dark text-6xl font-bold font-pjs">Divine <span className="text-[#7E74F1]">Edwin.</span></h1>
-                    <p className="text-sm w-3/5 leading-8 font-inter">
+                    <p className="text-sm w-96 leading-8 font-inter">
                         Creative front-end developer with more than +2 years of experience in enterprise companies and startups.
                         Proficient in Html, Tailwind Css, Javascript and React. Passionate about UI/UX
                     </p>
@@ -44,7 +44,7 @@ const Header = () => {
                     </div>
                 </div>
                 <div>
-                    <img src={picture} alt="Picture" />
+                    <img className="w-96" src={picture} alt="Picture" />
                 </div>
             </section>
 
