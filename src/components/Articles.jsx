@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import { useQuery } from 'react-query'
+import { Progress } from '@mantine/core'
 
 // fetching articles using the hashnode graphql API
 const endpoint = 'https://api.hashnode.com/'
@@ -67,7 +68,43 @@ const Articles = () => {
             </section>
 
             <section>
+                <div className="flex flex-col py-10 gap-2 items-center">
+                    <div className="flex gap-3">
+                        <p className="border-2 w-4 h-1 my-2.5 text-[#D9D9D9]"></p>
+                        <p className="text-md font-light text-cipher-light tracking-widest font-inter">LEARNING PATH</p>
+                    </div>
+                    <p className="text-cinder-dark font-bold text-3xl font-pjs ml-36">EDUCATION & SKILLS</p>
+                </div>
 
+                <div className='flex justify-evenly gap-8 px-20'>
+                    <div>
+                        <p className='w-96 font-inter text-cinder-light leading-8'>For 2+ years, I have been continuously learning in the field of front-end and experimenting
+                            with new technologies and frameworks, and here you can see a summary of my skills.
+                        </p>
+                    </div>
+                    <div>
+                        <div className='flex flex-col gap-3'>
+                            <p className='text-cinder-light font-inter'>HTML</p>
+                            <progress className="progress progress-primary w-56 rounded-lg" value="70" max="100"></progress>
+                        </div>
+                        <div className='flex flex-col gap-3'>
+                            <p className='text-cinder-light font-inter'>CSS & SASS</p>
+                            <progress className="progress progress-primary w-56" value="70" max="100"></progress>
+                        </div>
+                        <div className='flex flex-col gap-3'>
+                            <p className='text-cinder-light font-inter'>TAILWIND</p>
+                            <progress className="progress progress-primary w-56" value="70" max="100"></progress>
+                        </div>
+                        <div className='flex flex-col gap-3'>
+                            <p className='text-cinder-light font-inter'>JAVASCRIPT</p>
+                            <progress className="progress progress-primary w-56" value="70" max="100"></progress>
+                        </div>
+                        <div className='flex flex-col gap-3'>
+                            <p className='text-cinder-light font-inter'>REACT</p>
+                            <progress className="progress progress-primary w-56" value="70" max="100"></progress>
+                        </div>
+                    </div>
+                </div>
             </section>
 
         </>
