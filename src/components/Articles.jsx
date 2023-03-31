@@ -76,32 +76,32 @@ const Articles = () => {
                     <p className="text-cinder-dark font-bold text-3xl font-pjs ml-36">EDUCATION & SKILLS</p>
                 </div>
 
-                <div className='flex justify-evenly gap-8 px-20'>
+                <div className='flex justify-evenly gap-8 pt-5 pb-20'>
                     <div>
                         <p className='w-96 font-inter text-cinder-light leading-8'>For 2+ years, I have been continuously learning in the field of front-end and experimenting
                             with new technologies and frameworks, and here you can see a summary of my skills.
                         </p>
                     </div>
-                    <div>
-                        <div className='flex flex-col gap-3'>
-                            <p className='text-cinder-light font-inter'>HTML</p>
-                            <progress className="progress progress-primary w-56 rounded-lg" value="70" max="100"></progress>
+                    <div className='flex flex-col gap-6'>
+                        <div className='flex flex-col gap-1'>
+                            <p className='text-cinder-dark font-inter font-semibold text-md'>HTML</p>
+                            <Progress className='w-96 h-3' color="#7E74F1" value={80} label="80%" size="xl" radius="xl" animate />
                         </div>
-                        <div className='flex flex-col gap-3'>
-                            <p className='text-cinder-light font-inter'>CSS & SASS</p>
-                            <progress className="progress progress-primary w-56" value="70" max="100"></progress>
+                        <div className='flex flex-col gap-1'>
+                            <p className='text-cinder-dark font-inter font-semibold text-md'>CSS & SASS</p>
+                            <Progress className='w-96 h-3' color="#7E74F1" value={65} label="65%" size="xl" radius="xl" animate/>
                         </div>
-                        <div className='flex flex-col gap-3'>
-                            <p className='text-cinder-light font-inter'>TAILWIND</p>
-                            <progress className="progress progress-primary w-56" value="70" max="100"></progress>
+                        <div className='flex flex-col gap-1'>
+                            <p className='text-cinder-dark font-inter font-semibold text-md'>TAILWIND</p>
+                            <Progress className='w-96 h-3' color="#7E74F1" value={70} label="70%" size="xl" radius="xl" animate/>
                         </div>
-                        <div className='flex flex-col gap-3'>
-                            <p className='text-cinder-light font-inter'>JAVASCRIPT</p>
-                            <progress className="progress progress-primary w-56" value="70" max="100"></progress>
+                        <div className='flex flex-col gap-1'>
+                            <p className='text-cinder-dark font-inter font-semibold text-md'>JAVASCRIPT</p>
+                            <Progress className='w-96 h-3' color="#7E74F1" value={70} label="70%" size="xl" radius="xl" animate/>
                         </div>
-                        <div className='flex flex-col gap-3'>
-                            <p className='text-cinder-light font-inter'>REACT</p>
-                            <progress className="progress progress-primary w-56" value="70" max="100"></progress>
+                        <div className='flex flex-col gap-1'>
+                            <p className='text-cinder-dark font-inter font-semibold text-md'>REACT</p>
+                            <Progress className='w-96 h-3' color="#7E74F1" value={75} label="75%" size="xl" radius="xl" animate/>
                         </div>
                     </div>
                 </div>
