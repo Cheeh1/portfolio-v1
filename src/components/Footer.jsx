@@ -9,7 +9,7 @@ const Footer = () => {
     const sendEmail = () => {
         e.preventDefault();
 
-        emailjs.sendForm('service_xfjz23b', 'template_uph6sods', form.current, 'hEiN0LOggO3SCMzQC')
+        emailjs.sendForm('service_xfjz23b', 'template_uph6sods', form.current, 'UBKnrw_hEfdKpeostN3Nj')
         .then((result) => {
             console.log(result)
         }, (error) => {
