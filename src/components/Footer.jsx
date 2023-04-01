@@ -1,12 +1,26 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { TextInput, Textarea } from '@mantine/core'
 import { mail, phone, instagram, github, twitter, linkedin } from '../assets'
+import emailjs from 'emailjs-com'
 
 const Footer = () => {
+    const form = useRef();
+
+    const sendEmail = () => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_xfjz23b', 'template_uph6sods', form.current, 'hEiN0LOggO3SCMzQC')
+        .then((result) => {
+            console.log(result)
+        }, (error) => {
+            console.log(error.text)
+        })
+    }
+
     return (
         <>
             <section className='flex justify-evenly py-20 bg-[#FBFBFB]'>
-                <div className='flex flex-col gap-10'>
+                <form ref={form} onSubmit={sendEmail} className='flex flex-col gap-10'>
                     <TextInput
                         className='w-96'
                         placeholder="Name"
@@ -25,10 +39,10 @@ const Footer = () => {
                         // error="Minimum character is 5"
                         size="xl"
                     />
-                    <button className='p-3 bg-[#7E74F1] text-[#F5F3FE] rounded-lg font-inter font-medium'>
+                    <button type='submit' className='p-3 bg-[#7E74F1] text-[#F5F3FE] rounded-lg font-inter font-medium'>
                         Send message
                     </button>
-                </div>
+                </form>
 
                 <div className='flex flex-col gap-6'>
                     <div className='flex gap-3 items-center'>
