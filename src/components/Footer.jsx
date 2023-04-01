@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import { TextInput, Textarea } from '@mantine/core'
 import { mail, phone, instagram, github, twitter, linkedin } from '../assets'
-import emailjs from 'emailjs-com'
+import emailjs from '@emailjs/browser';
 
 const Footer = () => {
     const form = useRef();
