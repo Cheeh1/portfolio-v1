@@ -48,7 +48,7 @@ const Articles = () => {
                     <p className="text-cinder-dark font-bold text-3xl font-pjs ml-36">PERSONAL BLOG</p>
                 </div>
 
-                <div className='flex justify-evenly items-center py-16'>
+                <div className='flex flex-col gap-20 xl:flex-row xl:justify-evenly items-center py-16'>
                     {data.user.publication.posts?.map((post, i) => (
                         <div key={i} className='flex flex-col gap-5 border rounded-sm'>
                             <div className='flex flex-col gap-3'>
@@ -76,7 +76,7 @@ const Articles = () => {
                     <p className="text-cinder-dark font-bold text-3xl font-pjs ml-36">EDUCATION & SKILLS</p>
                 </div>
 
-                <div className='flex justify-evenly gap-8 pt-5 pb-20'>
+                <div className='flex flex-col xl:flex-row xl:justify-evenly gap-20 pt-5 pb-20'>
                     <div>
                         <p className='w-96 font-inter text-cinder-light leading-8'>For 2+ years, I have been continuously learning in the field of front-end and experimenting
                             with new technologies and frameworks, and here you can see a summary of my skills.

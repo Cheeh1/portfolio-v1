@@ -19,24 +19,21 @@ const Footer = () => {
 
     return (
         <>
-            <section className='flex justify-evenly py-20 bg-[#FBFBFB]'>
+            <section className='flex gap-20 flex-col xl:flex-row xl:justify-evenly py-20 bg-[#FBFBFB]'>
                 <form ref={form} onSubmit={sendEmail} className='flex flex-col gap-10'>
                     <TextInput
                         className='w-96'
                         placeholder="Name"
                         size="md"
-                    // error="Minimum Character is 3"
                     />
                     <TextInput
                         className='w-96'
                         placeholder="Email"
                         size="md"
-                    // error="Input your email"
                     />
                     <Textarea
                         className='w-96'
                         placeholder="Message"
-                        // error="Minimum character is 5"
                         size="xl"
                     />
                     <button type='submit' className='p-3 bg-[#7E74F1] text-[#F5F3FE] rounded-lg font-inter font-medium'>

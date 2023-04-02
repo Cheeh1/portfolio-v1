@@ -13,7 +13,7 @@ const Content = () => {
                     <p className="text-cinder-dark font-bold text-3xl font-pjs ml-36">Featured Portfolios</p>
                 </div>
 
-                <div className='mt-20 flex justify-evenly'>
+                <div className='mt-20 flex flex-col gap-20 xl:flex-row xl:justify-evenly'>
                     <div
                         className="w-96 h-full border-solid border-1 rounded bg-white overflow-hidden shadow-md">
                         <img className="w-96 h-80 sm:48 object-cover" src={item1} alt="item" />

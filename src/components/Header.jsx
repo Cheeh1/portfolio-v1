@@ -9,7 +9,7 @@ const Header = () => {
     
     return (
         <>
-            <nav className="flex justify-between items-center px-10 my-5 font-inter">
+            <nav className="xl:flex hidden justify-between items-center px-10 my-5 font-inter">
                 <p className="text-lg font-bold font-inter">Divine Edwin</p>
 
                 <ul className="flex gap-x-5 text-cinder-dark font-inter">
@@ -25,7 +25,7 @@ const Header = () => {
                 </div>
             </nav>
 
-            <section className="flex my-40 mx-24 justify-between items-center">
+            <section className="flex flex-col xl:flex-row md:flex-row my-40 mx-24 justify-between items-center">
                 <div className="flex flex-col gap-5">
                     <div className="flex gap-3">
                         <p className="border-2 w-4 h-1 my-2 text-[#D9D9D9]"></p>
@@ -57,7 +57,7 @@ const Header = () => {
                     <p className="text-cinder-dark font-bold text-3xl font-pjs ml-20">Specialized in</p>
                 </div>
 
-                <div className="flex gap-20">
+                <div className="flex flex-col xl:flex row gap-20">
                     <div className="flex flex-col justify-center gap-3 items-center bg-white py-10 px-10 border rounded-md">
                         <img className="border rounded-lg bg-[#F5F3FE] p-3 w-12" src={crown} alt="crown" />
                         <p className="font-pjs text-sm">UI/UX Design</p>
