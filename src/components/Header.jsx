@@ -25,14 +25,14 @@ const Header = () => {
                 </div>
             </nav>
 
-            <section className="flex flex-col xl:flex-row md:flex-row my-40 mx-24 justify-between items-center">
+            <section className="flex gap-20 flex-col xl:flex-row md:flex-row my-40 mx-24 xl:justify-between items-center">
                 <div className="flex flex-col gap-5">
                     <div className="flex gap-3">
                         <p className="border-2 w-4 h-1 my-2 text-[#D9D9D9]"></p>
                         <p className="text-sm font-light text-cinder-light tracking-widest font-inter">MY NAME IS</p>
                     </div>
                     <h1 className="text-cinder-dark text-6xl font-bold font-pjs">Divine <span className="text-[#7E74F1]">Edwin.</span></h1>
-                    <p className="text-sm w-96 leading-8 font-inter">
+                    <p className="text-sm w-72 xl:w-96 leading-8 font-inter">
                         Creative front-end developer with more than +2 years of experience in enterprise companies and startups.
                         Proficient in Html, Tailwind Css, Javascript and React. Passionate about UI/UX
                     </p>
@@ -54,10 +54,10 @@ const Header = () => {
                         <p className="border-2 w-4 h-1 my-2.5 text-[#D9D9D9]"></p>
                         <p className="text-md font-light text-cipher-light tracking-widest font-inter">SERVICES</p>
                     </div>
-                    <p className="text-cinder-dark font-bold text-3xl font-pjs ml-20">Specialized in</p>
+                    <p className="text-cinder-dark font-bold text-3xl font-pjs xl:ml-20">Specialized in</p>
                 </div>
 
-                <div className="flex flex-col xl:flex row gap-20">
+                <div className="flex flex-col xl:flex-row gap-20">
                     <div className="flex flex-col justify-center gap-3 items-center bg-white py-10 px-10 border rounded-md">
                         <img className="border rounded-lg bg-[#F5F3FE] p-3 w-12" src={crown} alt="crown" />
                         <p className="font-pjs text-sm">UI/UX Design</p>

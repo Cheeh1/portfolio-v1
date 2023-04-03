@@ -10,7 +10,7 @@ const Content = () => {
                         <p className="border-2 w-4 h-1 my-2.5 text-[#D9D9D9]"></p>
                         <p className="text-md font-light text-cipher-light tracking-widest font-inter">MY WORKS</p>
                     </div>
-                    <p className="text-cinder-dark font-bold text-3xl font-pjs ml-36">Featured Portfolios</p>
+                    <p className="text-cinder-dark font-bold text-3xl font-pjs xl:ml-36">Featured Portfolios</p>
                 </div>
 
                 <div className='mt-20 flex flex-col gap-20 xl:flex-row xl:justify-evenly'>

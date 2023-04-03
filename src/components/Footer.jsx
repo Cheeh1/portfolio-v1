@@ -1,41 +1,84 @@
-import React, { useRef } from 'react'
-import { TextInput, Textarea } from '@mantine/core'
+import React, { useState } from 'react'
+// import { useForm } from 'react-hook-form'
 import { mail, phone, instagram, github, twitter, linkedin } from '../assets'
-import emailjs from '@emailjs/browser';
+
 
 const Footer = () => {
-    const form = useRef();
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: '',
+    });
 
-    const sendEmail = () => {
-        e.preventDefault();
+    //registering the form input function
+    const handleChange = (event) => {
+        const { name, value } = event.target;
+        setFormData((prevFormData) => {
+            return {
+                ...prevFormData,
+                [name]: value,
+            };
+        });
+    };
 
-        emailjs.sendForm('service_xfjz23b', 'template_uph6sods', form.current, 'UBKnrw_hEfdKpeostN3Nj')
-        .then((result) => {
-            console.log(result)
-        }, (error) => {
-            console.log(error.text)
-        })
-    }
+    // Form validation using react-hook-form
+    const {
+        register,
+        handleSubmit,
+        watch,
+        formState: { errors },
+    } = useForm();
+    const onSubmit = (data) => console.log(data);
 
     return (
         <>
             <section className='flex gap-20 flex-col xl:flex-row xl:justify-evenly py-20 bg-[#FBFBFB]'>
-                <form ref={form} onSubmit={sendEmail} className='flex flex-col gap-10'>
-                    <TextInput
-                        className='w-96'
-                        placeholder="Name"
-                        size="md"
-                    />
-                    <TextInput
-                        className='w-96'
-                        placeholder="Email"
-                        size="md"
-                    />
-                    <Textarea
-                        className='w-96'
-                        placeholder="Message"
-                        size="xl"
-                    />
+                <form className='flex flex-col gap-10'>
+                    <section className='flex flex-col gap-5'>
+                        <div>
+                            <input
+                                type="text"
+                                name="name"
+                                placeholder="Name"
+                                className="w-80 py-2 pl-5 text-sm font-inter font-medium rounded-md border placeholder-cinder-light placeholder-opacity-60"
+                                id="first_name"
+                                onChange={handleChange}
+                                defaultValue={formData.name}
+                                // {...register("name", { required: true, minLength: 3 })}
+                            />
+                            {/* {errors.firstName && (
+                                <p className="error">Minimum of 3 characters</p>
+                            )} */}
+                        </div>
+                        <div>
+                            <input
+                                type="text"
+                                name="email"
+                                placeholder="Email"
+                                className="w-80 py-2 pl-5 text-sm font-inter font-medium rounded-md border placeholder-cinder-light placeholder-opacity-60"
+                                id="email"
+                                onChange={handleChange}
+                                defaultValue={formData.email}
+                                // {...register("email", {
+                                //     required: true,
+                                    
+                                // })}
+                            />
+                            {/* {errors.email && <p className="error">Not a valid email format</p>} */}
+                        </div>
+                        <div>
+                            <textarea
+                                id="message"
+                                name="message"
+                                className="w-80 h-32 py-3 pl-5 text-sm font-inter font-medium rounded-md border placeholder-cinder-light placeholder-opacity-60"
+                                placeholder="Send me a message and I will reply you as soon as possible..."
+                                onChange={handleChange}
+                                defaultValue={formData.message}
+                                // {...register("message", { required: true, minLength: 10 })}
+                            ></textarea>
+                            {/* {errors.message && <p className="error">Characters too short</p>} */}
+                        </div>
+                    </section>
                     <button type='submit' className='p-3 bg-[#7E74F1] text-[#F5F3FE] rounded-lg font-inter font-medium'>
                         Send message
                     </button>
