@@ -1,11 +1,12 @@
 import React from "react";
 import { moon, github, linkedin, instagram, twitter, picture, crown, app, globe } from '../assets'
+import resume from '../assets/Divine-Edwin-Resume.pdf'
 
 const Header = () => {
 
-    const handleDownload = () => {
-        window.open('../assets/Divine-Edwin-Resume.pdf', '_blank', 'download')
-    }
+    // const handleDownload = () => {
+    //     window.open('../assets/Divine-Edwin-Resume.pdf', '_blank', 'download')
+    // }
     
     return (
         <>
@@ -21,7 +22,7 @@ const Header = () => {
 
                 <div className="flex gap-x-5">
                     <img className="cursor-pointer" src={moon} alt="moon-icon" />
-                    <button onClick={handleDownload} className="border rounded-lg px-3 py-2 font-semibold text-cinder-dark font-inter">Resume</button>
+                    <button href={resume} download className="border rounded-lg px-3 py-2 font-semibold text-cinder-dark font-inter">Resume</button>
                 </div>
             </nav>
 
