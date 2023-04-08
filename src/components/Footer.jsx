@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-// import { useForm } from 'react-hook-form'
+import { useForm } from 'react-hook-form'
 import { mail, phone, instagram, github, twitter, linkedin } from '../assets'
 
 
@@ -22,18 +22,18 @@ const Footer = () => {
     };
 
     // Form validation using react-hook-form
-    // const {
-    //     register,
-    //     handleSubmit,
-    //     watch,
-    //     formState: { errors },
-    // } = useForm();
-    // const onSubmit = (data) => console.log(data);
+    const {
+        register,
+        handleSubmit,
+        watch,
+        formState: { errors },
+    } = useForm();
+    const onSubmit = (data) => console.log(data);
 
     return (
         <>
             <section className='flex gap-20 flex-col xl:flex-row items-center xl:justify-evenly py-20 bg-[#FBFBFB]'>
-                <form data-aos="zoom-out-down" className='flex flex-col gap-10 items-center'>
+                <form data-aos="zoom-out-down" onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-10 items-center'>
                     <section className='flex flex-col gap-5'>
                         <div>
                             <input
@@ -44,11 +44,11 @@ const Footer = () => {
                                 id="first_name"
                                 onChange={handleChange}
                                 defaultValue={formData.name}
-                                // {...register("name", { required: true, minLength: 3 })}
+                                {...register("name", { required: true, minLength: 3 })}
                             />
-                            {/* {errors.firstName && (
-                                <p className="error">Minimum of 3 characters</p>
-                            )} */}
+                            {errors.name && (
+                                <p className="text-red-500 text-sm font-pjs mt-1">Minimum of 3 characters</p>
+                            )}
                         </div>
                         <div>
                             <input
@@ -59,12 +59,12 @@ const Footer = () => {
                                 id="email"
                                 onChange={handleChange}
                                 defaultValue={formData.email}
-                                // {...register("email", {
-                                //     required: true,
-                                    
-                                // })}
+                                {...register("email", {
+                                    required: true,
+                                    pattern: /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i,
+                                })}
                             />
-                            {/* {errors.email && <p className="error">Not a valid email format</p>} */}
+                            {errors.email && <p className="text-red-500 text-sm font-pjs mt-1">Not a valid email format</p>}
                         </div>
                         <div>
                             <textarea
@@ -74,9 +74,9 @@ const Footer = () => {
                                 placeholder="Send me a message and I will reply you as soon as possible..."
                                 onChange={handleChange}
                                 defaultValue={formData.message}
-                                // {...register("message", { required: true, minLength: 10 })}
+                                {...register("message", { required: true, minLength: 10 })}
                             ></textarea>
-                            {/* {errors.message && <p className="error">Characters too short</p>} */}
+                            {errors.message && <p className="text-red-500 text-sm font-pjs">Characters too short</p>}
                         </div>
                     </section>
                     <button type='submit' className='p-3 w-80 bg-[#7E74F1] text-[#F5F3FE] rounded-lg font-inter font-medium'>
