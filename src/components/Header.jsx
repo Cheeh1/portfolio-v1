@@ -1,17 +1,17 @@
 import React, { useEffect } from "react";
 import { moon, github, linkedin, instagram, twitter, picture, crown, app, globe } from '../assets'
 import resume from '../assets/Divine-Edwin-Resume.pdf'
-import AOS from "aos";
-import 'aos/dist/aos.css';
+// import AOS from "aos";
+// import 'aos/dist/aos.css';
 // import { GiHamburgerMenu } from "react-icons/fa";
 
 const Header = () => {
 
-    useEffect(() => {
-        AOS.init({
-          duration: 1000 // set the animation duration (in milliseconds)
-        });
-      }, []); 
+    // useEffect(() => {
+    //     AOS.init({
+    //       duration: 1000 // set the animation duration (in milliseconds)
+    //     });
+    //   }, []); 
     // AOS.init();
 
     // const handleDownload = () => {
