@@ -33,7 +33,7 @@ const Footer = () => {
     return (
         <>
             <section className='flex gap-20 flex-col xl:flex-row items-center xl:justify-evenly py-20 bg-[#FBFBFB]'>
-                <form data-aos="zoom-out-down" onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-10 items-center'>
+                <form data-aos="zoom-out-down" onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-5 items-center'>
                     <section className='flex flex-col gap-5'>
                         <div>
                             <input

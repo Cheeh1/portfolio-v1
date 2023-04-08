@@ -14,7 +14,7 @@ const Content = () => {
                     <p className="text-cinder-dark font-bold text-3xl font-pjs xl:ml-36">Featured Portfolios</p>
                 </div>
 
-                <div className='mt-20 flex flex-col gap-20 xl:gap-0 xl:flex-row xl:justify-evenly md:items-center'>
+                <div className='mt-20 flex flex-col gap-20 xl:gap-0 xl:flex-row xl:justify-evenly items-center'>
                     <div
                         data-aos="zoom-in" className="w-80 xl:w-96 h-full border-solid border-1 rounded bg-white overflow-hidden shadow-md">
                         <img className=" xl:w-96 xl:h-80 object-cover" src={item1} alt="item" />

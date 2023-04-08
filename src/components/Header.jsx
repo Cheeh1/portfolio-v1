@@ -59,12 +59,12 @@ const Header = () => {
                         <a href="#linkedin"><img src={linkedin} alt="linkedin-icon" /></a>
                     </div>
                 </div>
-                <div>
-                    <img data-aos="flip-right" className="w-96" src={picture} alt="Picture" />
+                <div className="w-96">
+                    <img data-aos="flip-right" src={picture} alt="Picture" />
                 </div>
             </section>
 
-            <section className=" flex flex-col gap-20 p-20 bg-[#FBFBFB]" id="services">
+            <section className=" flex flex-col items-center gap-20 p-20 bg-[#FBFBFB]" id="services">
                 <div data-aos="zoom-in-down" className="flex flex-col gap-2 items-center">
                     <div className="flex gap-3">
                         <p className="border-2 w-4 h-1 my-2.5 text-[#D9D9D9]"></p>
@@ -74,25 +74,25 @@ const Header = () => {
                 </div>
 
                 <div className="flex flex-col xl:flex-row gap-20">
-                    <div data-aos="zoom-in" className="flex flex-col justify-center gap-3 items-center bg-white py-10 px-10 border rounded-md">
+                    <div data-aos="zoom-in" className="flex flex-col justify-center gap-3 items-center bg-white p-10 border rounded-lg">
                         <img className="border rounded-lg bg-[#F5F3FE] p-3 w-12" src={crown} alt="crown" />
-                        <p className="font-pjs text-sm">UI/UX Design</p>
-                        <p className="font-inter w-60 text-center">Turn what you have in mind of a digital product into reality.
+                        <p className="font-pjs text-sm text-center">UI/UX Design</p>
+                        <p className="font-inter xl:w-64 text-center">Turn what you have in mind of a digital product into reality.
                             For any platform you consider.
                         </p>
                     </div>
-                    <div data-aos="zoom-in" className="flex flex-col justify-center gap-3 items-center bg-white py-10 px-10 border rounded-md">
+                    <div data-aos="zoom-in" className="flex flex-col justify-center gap-3 items-center bg-white p-10 border rounded-lg">
                         <img className="border rounded-lg bg-[#F5F3FE] p-3 w-12" src={app} alt="app" />
-                        <p className="font-pjs text-sm">Application Development</p>
-                        <p className="font-inter w-64 text-center">
+                        <p className="font-pjs text-sm text-center">Application Development</p>
+                        <p className="font-inter xl:w-64 text-center">
                             Standard designing, building, and implementing your applications
                             with documentation.
                         </p>
                     </div>
-                    <div data-aos="zoom-in" className="flex flex-col justify-center gap-3 items-center bg-white py-10 px-10 border rounded-md">
+                    <div data-aos="zoom-in" className="flex flex-col justify-center gap-3 items-center bg-white p-10 border rounded-lg">
                         <img className="border rounded-lg bg-[#F5F3FE] p-3 w-12" src={globe} alt="globe" />
                         <p className="font-pjs text-sm">Web Development</p>
-                        <p className="font-inter w-64 text-center">
+                        <p className="font-inter w-50 xl:w-64 text-center">
                             Create and maintain your websites and also take care of
                             its performance and traffic capacity.
                         </p>

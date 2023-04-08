@@ -53,12 +53,12 @@ const Articles = () => {
                         <div data-aos="zoom-in" key={i} className='flex flex-col gap-5 border rounded-sm'>
                             <div className='flex flex-col gap-3'>
                                 <div>
-                                    <img className='w-96 h-full' src={post.coverImage} alt='blog-img-1' />
+                                    <img className='w-80 xl:w-96' src={post.coverImage} alt='blog-img-1' />
                                 </div>
                                 <div className='flex flex-col gap-2 pl-5'>
-                                    <h3 className='text-md font-bold text-cinder-dark font-pjs'>{post.title}</h3>
+                                    <h3 className='text-sm xl:text-md font-bold text-cinder-dark font-pjs'>{post.title}</h3>
                                     {/* <p className='text-cinder-light text-xs font-inter'>{post.dateAdded}</p> */}
-                                    <p className='text-cinder-light text-sm w-80 font-inter'>{`${post.brief}`}</p>
+                                    <p className='text-cinder-light text-sm w-72 xl:w-80 font-inter'>{`${post.brief}`}</p>
                                 </div>
                             </div>
                             <a className='text-cinder-light text-xs font-inter font-semibold text-center pb-5' href={`https://cheehdevworkshop.hashnode.dev/${post.slug}`} target='_blank'>Continue Reading</a>
