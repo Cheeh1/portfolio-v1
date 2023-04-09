@@ -41,8 +41,8 @@ const Header = () => {
                 <GiHamburgerMenu />
             </nav> */}
 
-            <section className="flex gap-20 flex-col xl:flex-row md:flex-row my-40 mx-24 xl:justify-between items-center">
-                <div data-aos="zoom-in" className="flex flex-col gap-5">
+            <section className="flex gap-20 flex-col xl:flex-row md:flex-row my-40 justify-around items-center">
+                <div data-aos="zoom-in" className="flex flex-col gap-5 mx-20 xl:mx-0">
                     <div className="flex gap-3">
                         <p className="border-2 w-4 h-1 my-2 text-[#D9D9D9]"></p>
                         <p className="text-sm font-light text-cinder-light tracking-widest font-inter">MY NAME IS</p>
@@ -59,7 +59,7 @@ const Header = () => {
                         <a href="#linkedin"><img src={linkedin} alt="linkedin-icon" /></a>
                     </div>
                 </div>
-                <div className="w-96">
+                <div className="w-96 mr-20 xl:mr-0">
                     <img data-aos="flip-right" src={picture} alt="Picture" />
                 </div>
             </section>
@@ -73,28 +73,27 @@ const Header = () => {
                     <p className="text-cinder-dark font-bold text-3xl font-pjs xl:ml-20">Specialized in</p>
                 </div>
 
-                <div className="flex flex-col xl:flex-row gap-20">
-                    <div data-aos="zoom-in" className="flex flex-col justify-center gap-3 items-center bg-white p-10 border rounded-lg">
+                <div className="flex flex-col gap-20 xl:flex-row xl:gap-72">
+                    {/* <div data-aos="zoom-in" className="flex flex-col justify-center gap-3 items-center bg-white p-10 border rounded-lg">
                         <img className="border rounded-lg bg-[#F5F3FE] p-3 w-12" src={crown} alt="crown" />
                         <p className="font-pjs text-sm text-center">UI/UX Design</p>
                         <p className="font-inter xl:w-64 text-center">Turn what you have in mind of a digital product into reality.
                             For any platform you consider.
                         </p>
-                    </div>
-                    <div data-aos="zoom-in" className="flex flex-col justify-center gap-3 items-center bg-white p-10 border rounded-lg">
-                        <img className="border rounded-lg bg-[#F5F3FE] p-3 w-12" src={app} alt="app" />
-                        <p className="font-pjs text-sm text-center">Application Development</p>
-                        <p className="font-inter xl:w-64 text-center">
-                            Standard designing, building, and implementing your applications
-                            with documentation.
-                        </p>
-                    </div>
+                    </div> */}
                     <div data-aos="zoom-in" className="flex flex-col justify-center gap-3 items-center bg-white p-10 border rounded-lg">
                         <img className="border rounded-lg bg-[#F5F3FE] p-3 w-12" src={globe} alt="globe" />
                         <p className="font-pjs text-sm">Web Development</p>
                         <p className="font-inter w-50 xl:w-64 text-center">
                             Create and maintain your websites and also take care of
                             its performance and traffic capacity.
+                        </p>
+                    </div>
+                    <div data-aos="zoom-in" className="flex flex-col justify-center gap-3 items-center bg-white p-10 border rounded-lg">
+                        <img className="border rounded-lg bg-[#F5F3FE] p-3 w-12" src={crown} alt="app" />
+                        <p className="font-pjs text-sm text-center">Technical Writing</p>
+                        <p className="font-inter xl:w-64 text-center">
+                        Create content on web-related topics for simplicity and better comprehension.
                         </p>
                     </div>
                 </div>
