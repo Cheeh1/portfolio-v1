@@ -14,6 +14,7 @@ module.exports = {
     fontFamily: {
       'inter': ['Inter', 'sans-serif'],
       'pjs': ['Plus Jakarta Sans', 'sans-serif'],
+      'shrik': ['Shrikhand', 'cursive'],
     },
   },
   plugins: [],

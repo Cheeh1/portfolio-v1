@@ -39,7 +39,7 @@ const Articles = () => {
     return (
         <>
 
-            <section className='my-28 bg-[#FBFBFB]'>
+            <section className='my-28 bg-[#FBFBFB]' id='blog'>
                 <div data-aos="zoom-in-down" className="flex flex-col py-14 gap-2 items-center">
                     <div className="flex gap-3">
                         <p className="border-2 w-4 h-1 my-2.5 text-[#D9D9D9]"></p>
@@ -48,7 +48,7 @@ const Articles = () => {
                     <p className="text-cinder-dark font-bold text-3xl font-pjs xl:ml-36">PERSONAL BLOG</p>
                 </div>
 
-                <div className='flex flex-col gap-20 xl:flex-row xl:justify-evenly items-center py-16'>
+                <div className='flex flex-col gap-20 md:flex-row md:gap-0 xl:flex-row justify-evenly items-center py-16'>
                     {data.user.publication.posts?.map((post, i) => (
                         <div data-aos="zoom-in" key={i} className='flex flex-col gap-5 border rounded-sm'>
                             <div className='flex flex-col gap-3'>
@@ -76,10 +76,11 @@ const Articles = () => {
                     <p className="text-cinder-dark font-bold text-3xl font-pjs xl:ml-36">EDUCATION & SKILLS</p>
                 </div>
 
-                <div className='flex flex-col xl:flex-row xl:justify-evenly items-center gap-20 pt-5 pb-20'>
+                <div className='flex flex-col md:flex-row md:gap-0 xl:flex-row justify-evenly items-center gap-20 pt-5 pb-20'>
                     <div data-aos="fade-right">
-                        <p className='xl:w-96 w-80 font-inter text-cinder-light leading-8'>For 2+ years, I have been continuously learning in the field of front-end and experimenting
-                            with new technologies and frameworks, and here you can see a summary of my skills.
+                        <p className='xl:w-96 w-80 font-inter text-cinder-light leading-8'>
+                            I've been learning about front-end development and experimenting with new technologies and frameworks,
+                            and this is a summary of my skills.
                         </p>
                     </div>
                     <div data-aos="fade-left" className='flex flex-col gap-6'>
@@ -89,19 +90,19 @@ const Articles = () => {
                         </div>
                         <div className='flex flex-col gap-1'>
                             <p className='text-cinder-dark font-inter font-semibold text-md'>CSS & SASS</p>
-                            <Progress className='xl:w-96 w-80 h-3' color="#7E74F1" value={100} size="xl" radius="xl" animate/>
+                            <Progress className='xl:w-96 w-80 h-3' color="#7E74F1" value={100} size="xl" radius="xl" animate />
                         </div>
                         <div className='flex flex-col gap-1'>
                             <p className='text-cinder-dark font-inter font-semibold text-md'>TAILWIND</p>
-                            <Progress className='xl:w-96 w-80 h-3' color="#7E74F1" value={100} size="xl" radius="xl" animate/>
+                            <Progress className='xl:w-96 w-80 h-3' color="#7E74F1" value={100} size="xl" radius="xl" animate />
                         </div>
                         <div className='flex flex-col gap-1'>
                             <p className='text-cinder-dark font-inter font-semibold text-md'>JAVASCRIPT</p>
-                            <Progress className='xl:w-96 w-80 h-3' color="#7E74F1" value={100} size="xl" radius="xl" animate/>
+                            <Progress className='xl:w-96 w-80 h-3' color="#7E74F1" value={100} size="xl" radius="xl" animate />
                         </div>
                         <div className='flex flex-col gap-1'>
                             <p className='text-cinder-dark font-inter font-semibold text-md'>REACT</p>
-                            <Progress className='xl:w-96 w-80 h-3' color="#7E74F1" value={100} size="xl" radius="xl" animate/>
+                            <Progress className='xl:w-96 w-80 h-3' color="#7E74F1" value={100} size="xl" radius="xl" animate />
                         </div>
                     </div>
                 </div>
