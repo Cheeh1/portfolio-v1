@@ -102,15 +102,19 @@ const Contact = () => {
                 </div>
             </section>
 
-            <section data-aos="zoom-out-down" className='flex flex-col items-center gap-2 py-14 bg-grey'>
+            <section data-aos="zoom-out-down" className='flex flex-col items-center gap-2 py-5 bg-grey'>
                 <div className="flex items-center gap-5">
                     <a href="https://github.com/Cheeh1" target='_blank'><img src={github} alt="github" /></a>
                     <a href="https://twitter.com/iamcheeh" target='_blank'><img src={twitter} alt="twitter" /></a>
                     <a href="https://www.linkedin.com/in/divineedwin/" target='_blank'><img src={linkedin} alt="linkedin" /></a>
                 </div>
-                <div className='text-cinder-light font-medium font-inter tracking-widest'>© 2022  -  Divine Edwin</div>
-                <div className='text-cinder-light font-medium font-inter tracking-widest'>Designed by  -  Caleb Nyong</div>
+                <p className='text-cinder-light font-medium font-inter tracking-widest'>© 2023  -  Divine Edwin</p>
+                <p className='text-cinder-light font-medium font-inter tracking-widest'>Designed by  -  Caleb Nyong</p>
             </section>
+
+            <div>
+                <a className='bg-grey pb-3 flex justify-center text-2xl font-extrabold font-pjs text-cinder-dark' href='#top'>TOP</a>
+            </div>
 
         </>
     )

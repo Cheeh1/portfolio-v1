@@ -5,6 +5,7 @@ import About from './components/About'
 import Works from './components/works'
 import Articles from './components/Articles'
 import Contact from './components/Contact'
+import Menu from './components/Menu'
 
 const App = () => {
 
@@ -16,6 +17,7 @@ const App = () => {
       < Works />
       < Articles />
       < Contact />
+      < Menu />
     </>
   )
 }
