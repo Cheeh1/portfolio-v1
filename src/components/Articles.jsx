@@ -1,7 +1,6 @@
 import React from 'react'
 import axios from 'axios'
 import { useQuery } from 'react-query'
-import { Progress } from '@mantine/core'
 
 // fetching articles using the hashnode graphql API
 const endpoint = 'https://api.hashnode.com/'
@@ -39,7 +38,7 @@ const Articles = () => {
     return (
         <>
 
-            <section className='my-28 bg-[#FBFBFB]' id='blog'>
+            <section className='my-28 bg-grey' id='blog'>
                 <div data-aos="zoom-in-down" className="flex flex-col py-14 gap-2 items-center">
                     <div className="flex gap-3">
                         <p className="border-2 w-4 h-1 my-2.5 text-[#D9D9D9]"></p>
@@ -66,48 +65,6 @@ const Articles = () => {
                     ))}
                 </div>
             </section>
-
-            <section>
-                <div data-aos="zoom-in-down" className="flex flex-col py-10 gap-2 items-center">
-                    <div className="flex gap-3">
-                        <p className="border-2 w-4 h-1 my-2.5 text-[#D9D9D9]"></p>
-                        <p className="text-md font-light text-cipher-light tracking-widest font-inter">LEARNING PATH</p>
-                    </div>
-                    <p className="text-cinder-dark font-bold text-3xl font-pjs xl:ml-36">EDUCATION & SKILLS</p>
-                </div>
-
-                <div className='flex flex-col md:flex-row md:gap-0 xl:flex-row justify-evenly items-center gap-20 pt-5 pb-20'>
-                    <div data-aos="fade-right">
-                        <p className='xl:w-96 w-80 font-inter text-cinder-light leading-8'>
-                            I've been learning about front-end development and experimenting with new technologies and frameworks,
-                            and this is a summary of my skills.
-                        </p>
-                    </div>
-                    <div data-aos="fade-left" className='flex flex-col gap-6'>
-                        <div className='flex flex-col gap-1'>
-                            <p className='text-cinder-dark font-inter font-semibold text-md'>HTML</p>
-                            <Progress className='xl:w-96 w-80 h-3' color="#7E74F1" value={100} size="xl" radius="xl" animate />
-                        </div>
-                        <div className='flex flex-col gap-1'>
-                            <p className='text-cinder-dark font-inter font-semibold text-md'>CSS & SASS</p>
-                            <Progress className='xl:w-96 w-80 h-3' color="#7E74F1" value={100} size="xl" radius="xl" animate />
-                        </div>
-                        <div className='flex flex-col gap-1'>
-                            <p className='text-cinder-dark font-inter font-semibold text-md'>TAILWIND</p>
-                            <Progress className='xl:w-96 w-80 h-3' color="#7E74F1" value={100} size="xl" radius="xl" animate />
-                        </div>
-                        <div className='flex flex-col gap-1'>
-                            <p className='text-cinder-dark font-inter font-semibold text-md'>JAVASCRIPT</p>
-                            <Progress className='xl:w-96 w-80 h-3' color="#7E74F1" value={100} size="xl" radius="xl" animate />
-                        </div>
-                        <div className='flex flex-col gap-1'>
-                            <p className='text-cinder-dark font-inter font-semibold text-md'>REACT</p>
-                            <Progress className='xl:w-96 w-80 h-3' color="#7E74F1" value={100} size="xl" radius="xl" animate />
-                        </div>
-                    </div>
-                </div>
-            </section>
-
         </>
     )
 }

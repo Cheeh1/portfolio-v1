@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
-import { mail, phone, instagram, github, twitter, linkedin } from '../assets'
+import { mail, phone, github, twitter, linkedin } from '../assets'
 
 
-const Footer = () => {
+const Contact = () => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -32,7 +32,7 @@ const Footer = () => {
 
     return (
         <>
-            <section id='contact' className='flex gap-20 flex-col md:flex-row md:gap-0 xl:flex-row items-center justify-evenly py-20 bg-[#FBFBFB]'>
+            <section id='contact' className='flex gap-20 flex-col md:flex-row md:gap-0 xl:flex-row items-center justify-evenly py-20'>
                 <form data-aos="zoom-out-down" onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-5 items-center'>
                     <section className='flex flex-col gap-5'>
                         <div>
@@ -102,12 +102,11 @@ const Footer = () => {
                 </div>
             </section>
 
-            <section data-aos="zoom-out-down" className='flex flex-col items-center gap-2 py-14'>
+            <section data-aos="zoom-out-down" className='flex flex-col items-center gap-2 py-14 bg-grey'>
                 <div className="flex items-center gap-5">
-                    {/* <a href="#instagram"><img src={instagram} alt="instagram-icon" /></a> */}
-                    <a href="https://github.com/Cheeh1"><img src={github} alt="twitter-icon" /></a>
-                    <a href="https://twitter.com/iamcheeh"><img src={twitter} alt="twitter-icon" /></a>
-                    <a href="https://www.linkedin.com/in/divineedwin/"><img src={linkedin} alt="linkedin-icon" /></a>
+                    <a href="https://github.com/Cheeh1" target='_blank'><img src={github} alt="github" /></a>
+                    <a href="https://twitter.com/iamcheeh" target='_blank'><img src={twitter} alt="twitter" /></a>
+                    <a href="https://www.linkedin.com/in/divineedwin/" target='_blank'><img src={linkedin} alt="linkedin" /></a>
                 </div>
                 <div className='text-cinder-light font-medium font-inter tracking-widest'>© 2022  -  Divine Edwin</div>
                 <div className='text-cinder-light font-medium font-inter tracking-widest'>Designed by  -  Caleb Nyong</div>
@@ -116,4 +115,4 @@ const Footer = () => {
         </>
     )
 }
-export default Footer
+export default Contact

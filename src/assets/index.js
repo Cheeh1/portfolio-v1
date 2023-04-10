@@ -9,12 +9,15 @@ import app from './icons/App.png'
 import link from './icons/link.png'
 import mail from './icons/mail.svg'
 import phone from './icons/phonecall.svg'
+import menuBtn from './icons/bars-solid.svg'
 import pin from './icons/pin.svg'
 import picture from './images/Hero-image.png'
-import item1 from './images/portfolio-item-1.jpg'
-import item2 from './images/portfolio-item-2.jpg'
-import item3 from './images/portfolio-item-3.jpg'
+import crappo from './images/crappo.png'
+import tenzies from './images/tenzies.png'
+import rick from './images/rickandmorty.png'
 
 export {
-    moon, github, linkedin, instagram, twitter, picture, crown, globe, app, link, item1, item2, item3, mail, phone, pin
+    moon, github, linkedin, instagram, twitter, picture, 
+    crown, globe, app, link, mail, phone, pin, menuBtn, 
+    crappo, tenzies, rick
 }

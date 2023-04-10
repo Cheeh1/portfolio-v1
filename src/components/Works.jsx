@@ -1,7 +1,7 @@
-import React, { useEffect} from 'react'
-import { item1, item2, item3, link, github, globe } from '../assets'
+import React from 'react'
+import { link, github, crappo, tenzies, rick } from '../assets'
 
-const Content = () => {
+const Works = () => {
 
     return (
         <>
@@ -17,12 +17,11 @@ const Content = () => {
                 <div className='mt-20 flex flex-col gap-20 xl:gap-0 xl:flex-row justify-evenly items-center'>
                     <div
                         data-aos="zoom-in" className="w-80 md:w-96 xl:w-96 h-full border-solid border-1 rounded bg-white overflow-hidden shadow-md">
-                        <img className="w-96 h-80 object-cover" src={item1} alt="item" />
+                        <img className="w-96 h-80 object-cover" src={crappo} alt="item" />
                         <div className="mt-4 ml-10 mb-5 flex flex-col gap-3">
                             <span className="text-xl text-cinder-dark font-semibold">Crappo Landing Page.</span>
                             <div className='flex gap-5 items-center'>
                                 <span className="text-sm border text-cinder-light rounded-md p-2">React</span>
-                                <span className="text-sm border text-cinder-light rounded-md p-2">SCSS</span>
                                 <a href='https://crappocryptosite.netlify.app/' target="_blank"><img src={link} alt="link-icon" /></a>
                                 <a href='https://github.com/Cheeh1/crypto-site' target="_blank"><img src={github} alt="link-icon" /></a>
                             </div>
@@ -30,7 +29,7 @@ const Content = () => {
                     </div>
                     <div
                         data-aos="zoom-in" className="w-80 md:w-96 xl:w-96 h-full border-solid border-1 rounded bg-white overflow-hidden shadow-md">
-                        <img className="w-96 h-80 sm:48 object-cover" src={item2} alt="item" />
+                        <img className="w-96 h-80 sm:48 object-cover" src={tenzies} alt="item" />
                         <div className="mt-4 ml-10 mb-5 flex flex-col gap-3">
                             <span className="text-xl text-cinder-dark font-semibold">Tenzies Game.</span>
                             <div className='flex gap-5 items-center'>
@@ -40,9 +39,9 @@ const Content = () => {
                             </div>
                         </div>
                     </div>
-                    {/* <div
+                    <div
                         data-aos="zoom-in" className="w-80 md:w-96 xl:w-96 h-full border-solid border-1 rounded bg-white overflow-hidden shadow-md">
-                        <img className="w-96 h-80 sm:48 object-cover" src={item3} alt="item" />
+                        <img className="w-96 h-80 sm:48 object-cover" src={rick} alt="item" />
                         <div className="mt-4 ml-10 mb-5 flex flex-col gap-3">
                             <span className="text-xl text-cinder-dark font-semibold">RickandMorty API Website.</span>
                             <div className='flex gap-5 items-center'>
@@ -51,10 +50,10 @@ const Content = () => {
                                 <a href='https://github.com/Cheeh1/rickandmorty-api-project' target="_blank"><img src={github} alt="link-icon" /></a>
                             </div>
                         </div>
-                    </div> */}
+                    </div>
                 </div>
             </section>
         </>
     )
 }
-export default Content
+export default Works
