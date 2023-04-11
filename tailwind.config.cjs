@@ -9,7 +9,7 @@ module.exports = {
       colors: {
         'cinder-light': '#656D72',
         'cinder-dark': '#232E35',
-        'purple': '#7E74F1',
+        'purplelight': '#7E74F1',
         'grey': '#FBFBFB',
       },
     },

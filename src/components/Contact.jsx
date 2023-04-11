@@ -79,7 +79,7 @@ const Contact = () => {
                             {errors.message && <p className="text-red-500 text-sm font-pjs">Characters too short</p>}
                         </div>
                     </section>
-                    <button type='submit' className='p-3 w-80 bg-[#7E74F1] text-[#F5F3FE] rounded-lg font-inter font-medium'>
+                    <button type='submit' className='p-3 w-80 bg-purplelight text-[#F5F3FE] rounded-lg font-inter font-medium'>
                         Send message
                     </button>
                 </form>
