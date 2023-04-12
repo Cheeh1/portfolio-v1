@@ -104,9 +104,10 @@ const Contact = () => {
 
             <section data-aos="zoom-out-down" className='flex flex-col items-center gap-2 py-5 bg-grey'>
                 <div className="flex items-center gap-5">
-                    <a href="https://github.com/Cheeh1" target='_blank'><img src={github} alt="github" /></a>
-                    <a href="https://twitter.com/iamcheeh" target='_blank'><img src={twitter} alt="twitter" /></a>
-                    <a href="https://www.linkedin.com/in/divineedwin/" target='_blank'><img src={linkedin} alt="linkedin" /></a>
+                    <a href="https://github.com/Cheeh1" target='_blank'><i class="fa-brands fa-github fa-xl"></i></a>
+                    <a href="https://twitter.com/iamcheeh" target='_blank'><i class="fa-brands fa-twitter fa-xl"></i></a>
+                    <a href="https://www.linkedin.com/in/divineedwin/" target='_blank'><i class="fa-brands fa-linkedin-in fa-xl"></i></a>
+                    <a href="https://cheehdevworkshop.hashnode.dev/" target="_blank"><i className="fa-brands fa-blogger fa-xl"></i></a>
                 </div>
                 <p className='text-cinder-light font-medium font-inter tracking-widest'>© 2023  -  Divine Edwin</p>
                 <p className='text-cinder-light font-medium font-inter tracking-widest'>Designed by  -  Caleb Nyong</p>

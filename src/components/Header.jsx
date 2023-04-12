@@ -26,9 +26,10 @@ const Header = () => {
                         Proficient in Html, Tailwind Css, Javascript and React.
                     </p>
                     <div className="flex items-center gap-5">
-                        <a href="https://github.com/Cheeh1" target='_blank'><img src={github} alt="github" /></a>
-                        <a href="https://twitter.com/iamcheeh" target='_blank'><img src={twitter} alt="twitter" /></a>
-                        <a href="https://www.linkedin.com/in/divineedwin/" target='_blank'><img src={linkedin} alt="linkedin" /></a>
+                        <a href="https://github.com/Cheeh1" target='_blank'><i class="fa-brands fa-github fa-xl"></i></a>
+                        <a href="https://twitter.com/iamcheeh" target='_blank'><i class="fa-brands fa-twitter fa-xl"></i></a>
+                        <a href="https://www.linkedin.com/in/divineedwin/" target='_blank'><i class="fa-brands fa-linkedin-in fa-xl"></i></a>
+                        <a href="https://cheehdevworkshop.hashnode.dev/" target="_blank"><i className="fa-brands fa-blogger fa-xl"></i></a>
                     </div>
                 </div>
                 <div className="xl:w-96">

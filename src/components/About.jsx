@@ -1,5 +1,5 @@
 import React from 'react'
-import { Progress } from '@mantine/core'
+import { tailwind } from '../assets'
 
 const About = () => {
     return (
@@ -21,26 +21,42 @@ const About = () => {
                             Thank you for visiting my portfolio! Please feel free to browse through my projects.
                         </p>
                     </div>
-                    <div data-aos="fade-left" className='flex flex-col gap-6'>
-                        <div className='flex flex-col gap-1'>
-                            <p className='text-cinder-dark font-inter font-semibold text-md'>HTML</p>
-                            <Progress className='xl:w-96 w-80 h-3' color="#7E74F1" value={100} size="xl" radius="xl" animate />
+                    <div className='grid grid-rows-3 grid-cols-3 gap-x-1 xl:gap-x-16 gap-y-16'>
+                        <div className='flex flex-col gap-3 text-cinder-dark font-pjs items-center'>
+                            <i className="fa-brands fa-html5 fa-2xl"></i>
+                            <p>HTML</p>
                         </div>
-                        <div className='flex flex-col gap-1'>
-                            <p className='text-cinder-dark font-inter font-semibold text-md'>CSS & SASS</p>
-                            <Progress className='xl:w-96 w-80 h-3' color="#7E74F1" value={100} size="xl" radius="xl" animate />
+                        <div className='flex flex-col gap-3 text-cinder-dark font-pjs items-center'>
+                            <i className="fa-brands fa-css3 fa-2xl"></i>
+                            <p>CSS</p>
                         </div>
-                        <div className='flex flex-col gap-1'>
-                            <p className='text-cinder-dark font-inter font-semibold text-md'>TAILWIND</p>
-                            <Progress className='xl:w-96 w-80 h-3' color="#7E74F1" value={100} size="xl" radius="xl" animate />
+                        <div className='flex flex-col gap-3 text-cinder-dark font-pjs items-center'>
+                            <i className="fa-brands fa-js fa-2xl"></i>
+                            <p>JAVASCRIPT</p>
                         </div>
-                        <div className='flex flex-col gap-1'>
-                            <p className='text-cinder-dark font-inter font-semibold text-md'>JAVASCRIPT</p>
-                            <Progress className='xl:w-96 w-80 h-3' color="#7E74F1" value={100} size="xl" radius="xl" animate />
+                        <div className='flex flex-col gap-3 text-cinder-dark font-pjs items-center'>
+                            <i className="fa-brands fa-react fa-2xl"></i>
+                            <p>REACT</p>
                         </div>
-                        <div className='flex flex-col gap-1'>
-                            <p className='text-cinder-dark font-inter font-semibold text-md'>REACT</p>
-                            <Progress className='xl:w-96 w-80 h-3' color="#7E74F1" value={100} size="xl" radius="xl" animate />
+                        <div className='flex flex-col gap-3 text-cinder-dark font-pjs items-center'>
+                            <i className="fa-brands fa-git-alt fa-2xl"></i>
+                            <p>GIT</p>
+                        </div>
+                        <div className='flex flex-col gap-3 text-cinder-dark font-pjs items-center'>
+                            <i className="fa-brands fa-sass fa-2xl"></i>
+                            <p>SASS</p>
+                        </div>
+                        <div className='flex flex-col -mt-3 text-cinder-dark font-pjs items-center'>
+                            <img src={tailwind} className='w-10' alt='logo' />
+                            <p>TAILWIND</p>
+                        </div>
+                        <div className='flex flex-col gap-3 text-cinder-dark font-pjs items-center'>
+                            <i class="fa-solid fa-mobile-screen-button fa-2xl"></i>
+                            <p>RESPONSIVE</p>
+                        </div>
+                        <div className='flex flex-col gap-3 text-cinder-dark font-pjs items-center'>
+                            <i className="fa-solid fa-terminal fa-2xl"></i>
+                            <p>TERMINAL</p>
                         </div>
                     </div>
                 </div>
