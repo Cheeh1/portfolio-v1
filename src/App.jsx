@@ -1,23 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from './components/Navbar'
 import Header from './components/Header'
 import About from './components/About'
-import Works from './components/Works'
+import Works from './components/works'
 import Articles from './components/Articles'
 import Contact from './components/Contact'
-import Menu from './components/Menu'
+import Footer from './components/Footer'
 
 const App = () => {
 
+  const [darkMode, setDarkMode] = useState(false)
+
+  const darkToggle = () => {
+    setDarkMode(!darkMode)
+  }
+
   return (
     <>
-        < Navbar />
+      <div className={`${darkMode ? 'dark' : ''}`}>
+        < Navbar darkMode={darkMode} darkToggle={darkToggle} />
         < Header />
-        < About />
+        < About darkMode={darkMode} />
         < Works />
-        < Articles />
-        < Contact />
-        < Menu />
+        < Articles darkMode={darkMode} />
+        < Contact darkMode={darkMode}/>
+        < Footer darkMode={darkMode} />
+      </div>
     </>
   )
 }

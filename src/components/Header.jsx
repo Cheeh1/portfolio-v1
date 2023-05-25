@@ -1,16 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { github, linkedin, twitter, picture} from '../assets'
-// import AOS from "aos";
-// import 'aos/dist/aos.css';
 
 const Header = () => {
-
-    // useEffect(() => {
-    //     AOS.init({
-    //       duration: 1000 // set the animation duration (in milliseconds)
-    //     });
-    //   }, []); 
-    // AOS.init();
 
     return (
         <>
@@ -18,9 +9,9 @@ const Header = () => {
                 <div data-aos="zoom-in" className="flex flex-col gap-5 mx-20 xl:mx-0">
                     <div className="flex gap-3">
                         <p className="border-2 w-4 h-1 my-2 text-[#D9D9D9]"></p>
-                        <p className="text-sm font-light text-cinder-light tracking-widest font-inter">MY NAME IS</p>
+                        <p className="text-sm font-light text-cinder-light dark:text-white tracking-widest font-inter">MY NAME IS</p>
                     </div>
-                    <h1 className="text-cinder-dark text-6xl font-bold font-pjs">Divine <span className="text-purplelight">Edwin.</span></h1>
+                    <h1 className="text-cinder-dark dark:text-cinder-dark-mode text-6xl font-bold font-pjs">Divine <span className="text-purplelight">Edwin.</span></h1>
                     <p className="text-sm w-72 xl:w-96 leading-8 font-inter">
                         Creative frontend developer, who specializes in designing visually appealing and intuitive user interfaces that improve user experience.
                         Proficient in Html, Tailwind Css, Javascript and React.

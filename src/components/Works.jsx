@@ -9,9 +9,9 @@ const Works = () => {
                 <div data-aos="zoom-in-down" className="flex flex-col gap-2 items-center">
                     <div className="flex gap-3">
                         <p className="border-2 w-4 h-1 my-2.5 text-[#D9D9D9]"></p>
-                        <p className="text-md font-light text-cipher-light tracking-widest font-inter">MY WORKS</p>
+                        <p className="text-md font-light text-cinder-light dark:text-white tracking-widest font-inter">MY WORKS</p>
                     </div>
-                    <p className="text-cinder-dark font-bold text-3xl font-pjs xl:ml-72">FEATURED PORTFOLIOS</p>
+                    <p className="text-cinder-dark dark:text-cinder-dark-mode font-bold text-3xl font-pjs xl:ml-72">FEATURED PORTFOLIOS</p>
                 </div>
 
                 <div className='mt-20 flex flex-col gap-20 xl:gap-0 xl:flex-row justify-evenly items-center'>

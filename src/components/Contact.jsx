@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form'
 import { mail, phone, github, twitter, linkedin } from '../assets'
 
 
-const Contact = () => {
+const Contact = ({darkMode}) => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -88,35 +88,19 @@ const Contact = () => {
                     <div className='flex gap-3 items-center'>
                         <img className='bg-[#F5F3FE] p-2 rounded-xl' src={phone} alt="phone" />
                         <div className='flex flex-col'>
-                            <p className='font-inter text-cinder-dark font-semibold'>Phone</p>
-                            <a href='tel:+2348155931977' className='font-inter text-cinder-light font-normal text-sm'>(+234)8155931977</a>
+                            <p className='font-inter text-cinder-dark dark:text-cinder-dark-mode font-semibold'>Phone</p>
+                            <a href='tel:+2348155931977' className='font-inter text-cinder-light dark:text-white font-normal text-sm'>(+234)8155931977</a>
                         </div>
                     </div>
                     <div className='flex items-center gap-3'>
                         <img className='bg-[#F5F3FE] p-2 rounded-xl' src={mail} alt="phone" />
                         <div className='flex flex-col'>
-                            <p className='font-inter text-cinder-dark font-semibold'>E-Mail</p>
-                            <a href='mailto:edwindivine5@gmail.com' className='font-inter text-cinder-light font-normal text-sm'>edwindivine5@gmail.com</a>
+                            <p className='font-inter text-cinder-dark dark:text-cinder-dark-mode font-semibold'>E-Mail</p>
+                            <a href='mailto:edwindivine5@gmail.com' className='font-inter text-cinder-light dark:text-white font-normal text-sm'>edwindivine5@gmail.com</a>
                         </div>
                     </div>
                 </div>
             </section>
-
-            <section data-aos="zoom-out-down" className='flex flex-col items-center gap-2 py-5 bg-grey'>
-                <div className="flex items-center gap-5">
-                    <a href="https://github.com/Cheeh1" target='_blank'><i class="fa-brands fa-github fa-xl"></i></a>
-                    <a href="https://twitter.com/iamcheeh" target='_blank'><i class="fa-brands fa-twitter fa-xl"></i></a>
-                    <a href="https://www.linkedin.com/in/divineedwin/" target='_blank'><i class="fa-brands fa-linkedin-in fa-xl"></i></a>
-                    <a href="https://cheehdevworkshop.hashnode.dev/" target="_blank"><i className="fa-brands fa-blogger fa-xl"></i></a>
-                </div>
-                <p className='text-cinder-light font-medium font-inter tracking-widest'>© 2023  -  Divine Edwin</p>
-                <p className='text-cinder-light font-medium font-inter tracking-widest'>Designed by  -  Caleb Nyong</p>
-            </section>
-
-            <div>
-                <a className='bg-grey pb-3 flex justify-center text-2xl font-extrabold font-pjs text-cinder-dark' href='#top'>TOP</a>
-            </div>
-
         </>
     )
 }

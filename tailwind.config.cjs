@@ -4,11 +4,15 @@ module.exports = {
   "./index.html", 
   "./src/**/*.{js,ts,jsx,tsx}"
 ],
+darkMode: 'class',
   theme: {
     extend: {
+      backgroundColor: ["dark"],
+      textColor: ["dark"],
       colors: {
         'cinder-light': '#656D72',
         'cinder-dark': '#232E35',
+        'cinder-dark-mode': '#2e3e4a',
         'purplelight': '#7E74F1',
         'grey': '#FBFBFB',
       },
