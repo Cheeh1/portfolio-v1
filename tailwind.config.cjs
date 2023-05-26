@@ -12,7 +12,7 @@ darkMode: 'class',
       colors: {
         'cinder-light': '#656D72',
         'cinder-dark': '#232E35',
-        'cinder-dark-mode': '#2e3e4a',
+        'cinder-dark-mode': '#4b7491',
         'purplelight': '#7E74F1',
         'grey': '#FBFBFB',
       },

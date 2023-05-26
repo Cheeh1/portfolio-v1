@@ -5,3 +5,7 @@
 .dark {
     @apply bg-black text-white;
 }
+
+.color {
+    color: #453ca4;
+}
