@@ -2,7 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import { useQuery } from 'react-query'
 
-// Fetching articles using the Hashnode GraphQL API
+// fetching articles using the hashnode graphql API
 const endpoint = 'https://api.hashnode.com/'
 
 const ARTICLE_QUERY = `{
@@ -19,8 +19,8 @@ const ARTICLE_QUERY = `{
     }
   }`
 
-const Articles = ({ darkMode }) => {
-    // Fetching articles using the useQuery hook from react-query
+const Articles = ({darkMode}) => {
+
     const { isLoading, error, data } = useQuery("article", () => {
         return axios({
             url: endpoint,
@@ -39,8 +39,7 @@ const Articles = ({ darkMode }) => {
         <>
 
             <section className={`my-28 ${darkMode ? 'dark' : 'bg-grey'}`} id='blog'>
-               
-                <div className="flex flex-col py-14 gap-2 items-center">
+                <div data-aos="zoom-in-down" className="flex flex-col py-14 gap-2 items-center">
                     <div className="flex gap-3">
                         <p className="border-2 w-4 h-1 my-2.5 text-[#D9D9D9]"></p>
                         <p className="text-md font-light text-cinder-light dark:text-white tracking-widest font-inter">MY ARTICLES</p>
@@ -49,9 +48,8 @@ const Articles = ({ darkMode }) => {
                 </div>
 
                 <div className='flex flex-col gap-20 xl:gap-0 xl:flex-row justify-evenly items-center py-16'>
-                     {/* Displaying individual articles */}
                     {data.user.publication.posts?.map((post, i) => (
-                        <div key={i} className='flex flex-col gap-5 border dark:border-gray-900 rounded-sm'>
+                        <div data-aos="zoom-in" key={i} className='flex flex-col gap-5 border dark:border-gray-900 rounded-sm'>
                             <div className='flex flex-col gap-3'>
                                 <div>
                                     <img className='w-80 xl:w-96' src={post.coverImage} alt='blog-img-1' />
@@ -66,7 +64,6 @@ const Articles = ({ darkMode }) => {
                     ))}
                 </div>
 
-                {/* Alternative layout */}
                 {/* <div className='grid grid-rows-2 grid-cols-2 gap-10 py-20'>
                     {data.user.publication.posts?.map((post, i) => (
                         <div data-aos="zoom-in" key={i} className='flex flex-col gap-5 border rounded-sm w-96'>
