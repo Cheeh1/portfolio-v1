@@ -3,9 +3,6 @@
 @tailwind utilities;
 
 .dark {
-    @apply bg-black text-white;
+    @apply bg-gray-900 text-gray-100;
 }
 
-.color {
-    color: #453ca4;
-}
