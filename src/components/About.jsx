@@ -1,12 +1,11 @@
 import React from 'react'
 import { tailwind } from '../assets'
-// import { motion } from 'framer-motion'
 
-const About = ({ darkMode }) => {
+const About = () => {
     
     return (
         <>
-            <div className={`${darkMode ? 'dark' : 'bg-grey'}`} id='about'>
+            <div className='bg-grey dark:bg-gray-900' id='about'>
                 <div className="flex flex-col py-10 gap-2 items-center">
                     <div className="flex gap-3">
                         <p className="border-2 w-4 h-1 my-2.5 text-[#D9D9D9]"></p>

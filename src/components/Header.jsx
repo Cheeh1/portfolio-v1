@@ -1,12 +1,12 @@
 import React from "react";
-import { github, linkedin, twitter, picture} from '../assets'
+import { picture } from '../assets'
 
 const Header = () => {
 
     return (
         <>
             <section className="flex gap-20 flex-col xl:flex-row md:flex-row my-28 justify-around items-center">
-                <div data-aos="zoom-in" className="flex flex-col gap-5 mx-20 xl:mx-0">
+                <div className="flex flex-col gap-5 mx-20 xl:mx-0">
                     <div className="flex gap-3">
                         <p className="border-2 w-4 h-1 my-2 text-[#D9D9D9]"></p>
                         <p className="text-sm font-light text-cinder-light dark:text-white tracking-widest font-inter">MY NAME IS</p>

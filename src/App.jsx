@@ -20,11 +20,11 @@ const App = () => {
       <div className={`${darkMode ? 'dark' : ''}`}>
         < Navbar darkMode={darkMode} darkToggle={darkToggle} />
         < Header />
-        < About darkMode={darkMode} />
+        < About />
         < Works />
-        < Articles darkMode={darkMode} />
-        < Contact darkMode={darkMode}/>
-        < Footer darkMode={darkMode} />
+        < Articles />
+        < Contact />
+        < Footer />
       </div>
     </>
   )

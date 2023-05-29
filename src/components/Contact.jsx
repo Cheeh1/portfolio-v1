@@ -1,16 +1,16 @@
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
-import { mail, phone, github, twitter, linkedin } from '../assets'
+import { mail, phone } from '../assets'
 
 
-const Contact = ({darkMode}) => {
+const Contact = () => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
         message: '',
     });
 
-    //registering the form input function
+    //Registering the form input function
     const handleChange = (event) => {
         const { name, value } = event.target;
         setFormData((prevFormData) => {
@@ -33,7 +33,7 @@ const Contact = ({darkMode}) => {
     return (
         <>
             <section id='contact' className='flex gap-20 flex-col md:flex-row md:gap-0 xl:flex-row items-center justify-evenly py-20'>
-                <form data-aos="zoom-out-down" onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-5 items-center'>
+                <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-5 items-center'>
                     <section className='flex flex-col gap-5'>
                         <div>
                             <input
@@ -84,7 +84,7 @@ const Contact = ({darkMode}) => {
                     </button>
                 </form>
 
-                <div data-aos="zoom-out-up" className='flex flex-col gap-6'>
+                <div className='flex flex-col gap-6'>
                     <div className='flex gap-3 items-center'>
                         <img className='bg-[#F5F3FE] p-2 rounded-xl' src={phone} alt="phone" />
                         <div className='flex flex-col'>

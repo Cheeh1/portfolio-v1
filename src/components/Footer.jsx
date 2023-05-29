@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Footer = ({darkMode}) => {
+const Footer = () => {
     return (
         <>
-            <section data-aos="zoom-out-down" className={`relative flex flex-col items-center gap-2 py-10 ${darkMode ? 'dark' : 'bg-grey'}`}>
+            <section className='relative flex flex-col items-center gap-2 py-10 bg-grey dark:bg-gray-900'>
                 <div className="flex items-center gap-5">
                     <a href="https://github.com/Cheeh1" target='_blank'><i class="fa-brands fa-github fa-xl"></i></a>
                     <a href="https://twitter.com/iamcheeh" target='_blank'><i class="fa-brands fa-twitter fa-xl"></i></a>
@@ -14,13 +14,9 @@ const Footer = ({darkMode}) => {
                 {/* <p className='text-cinder-light font-medium font-inter tracking-widest'>Designed by  -  Caleb Nyong</p> */}
             </section>
 
-            {/* <div>
-                <a className='bg-grey pb-3 flex justify-center text-2xl font-extrabold font-pjs text-cinder-dark' href='#top'>TOP</a>
-            </div> */}
-
-            {/* <div>
-               <a href='#navbar' className=''> <i className="fa-solid absolute fa-arrow-up right-5 fa-2xl"></i></a>
-            </div> */}
+            <div>
+                <a className='bg-grey dark:bg-gray-900 pb-3 flex justify-center text-2xl font-extrabold font-pjs text-cinder-dark dark:text-white' href='#top'>TOP</a>
+            </div>
         </>
     )
 }
