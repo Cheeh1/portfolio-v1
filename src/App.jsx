@@ -23,7 +23,7 @@ const App = () => {
         < About darkMode={darkMode} />
         < Works />
         < Articles darkMode={darkMode} />
-        < Contact darkMode={darkMode}/>
+        < Contact />
         < Footer darkMode={darkMode} />
       </div>
     </>

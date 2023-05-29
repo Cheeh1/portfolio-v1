@@ -22,13 +22,13 @@ const Navbar = ({darkMode, darkToggle}) => {
                     <li><a className="hover:text-purplelight hover:border hover:rounded-lg hover:shadow-md hover:font-semibold hover:p-3" href="#contact">CONTACT</a></li>
                 </ul>
 
-                <div data-aos="fade-left" className="flex gap-x-5 items-center">
+                {/* <div data-aos="fade-left" className="flex gap-x-5 items-center">
                     <div onClick={darkToggle} className="cursor-pointer">
                         {!darkMode ? <img src={moon} alt="moon-icon" /> : <img src={sun} className='bg-white p-1 rounded-xl' alt='sun-icon' />}
                     </div>
                     <a href='https://drive.google.com/file/d/1XU04hRe1KN2qr1R9MVj39_eUIptkIg4B/view?usp=share_link' target='_blank'
                         className='border rounded-lg p-2 text-cinder-dark dark:text-white font-pjs hover:text-purplelight hover:shadow-md hover:font-semibold'>Resume</a>
-                </div>
+                </div> */}
             </nav>
 
             {/* mobile navbar */}
