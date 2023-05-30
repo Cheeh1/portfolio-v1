@@ -11,8 +11,8 @@ const Header = () => {
                         <p className="border-2 w-4 h-1 my-2 text-[#D9D9D9]"></p>
                         <p className="text-sm font-light text-cinder-light dark:text-white tracking-widest font-inter">MY NAME IS</p>
                     </div>
-                    <h1 className="text-cinder-dark dark:text-cinder-dark-mode text-6xl font-bold font-pjs">Divine <span className="text-purplelight">Edwin.</span></h1>
-                    <p className="text-sm w-72 xl:w-96 leading-8 font-inter">
+                    <h1 className="text-cinder-dark dark:text-cinder-dark-mode text-5xl font-bold font-pjs xl:text-6xl">Divine <span className="text-purplelight">Edwin.</span></h1>
+                    <p className="text-md w-80 xl:w-96 leading-8 font-inter">
                         Creative frontend developer, who specializes in designing visually appealing and intuitive user interfaces that improve user experience.
                         Proficient in Html, Tailwind Css, Javascript and React.
                     </p>

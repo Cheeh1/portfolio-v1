@@ -45,7 +45,7 @@ const Articles = () => {
                         <p className="border-2 w-4 h-1 my-2.5 text-[#D9D9D9]"></p>
                         <p className="text-md font-light text-cinder-light dark:text-white tracking-widest font-inter">MY ARTICLES</p>
                     </div>
-                    <p className="text-cinder-dark dark:text-cinder-dark-mode font-bold text-3xl font-pjs xl:ml-36">PERSONAL BLOG</p>
+                    <p className="text-cinder-dark dark:text-cinder-dark-mode font-bold text-3xl font-pjs">PERSONAL BLOG</p>
                 </div>
 
                 <div className='flex flex-col gap-20 xl:gap-0 xl:flex-row justify-evenly items-center py-16'>
@@ -57,7 +57,7 @@ const Articles = () => {
                                     <img className='w-80 xl:w-96' src={post.coverImage} alt='blog-img-1' />
                                 </div>
                                 <div className='flex flex-col gap-2 pl-5'>
-                                    <h3 className='text-sm xl:text-md font-bold text-cinder-dark dark:text-cinder-dark-mode font-pjs'>{post.title}</h3>
+                                    <h3 className='text-sm w-72 xl:w-full xl:text-md font-bold text-cinder-dark dark:text-cinder-dark-mode font-pjs'>{post.title}</h3>
                                     <p className='text-cinder-light dark:text-white text-sm w-72 xl:w-80 font-inter'>{`${post.brief}`}</p>
                                 </div>
                             </div>

@@ -32,7 +32,7 @@ const Contact = () => {
 
     return (
         <>
-            <section id='contact' className='flex gap-20 flex-col md:flex-row md:gap-0 xl:flex-row items-center justify-evenly py-20'>
+            <section id='contact' className='flex gap-20 flex-col md:flex-row md:gap-0 xl:flex-row items-center justify-evenly py-10'>
                 <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-5 items-center'>
                     <section className='flex flex-col gap-5'>
                         <div>

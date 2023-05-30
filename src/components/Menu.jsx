@@ -4,6 +4,7 @@ import { moon, sun } from '../assets'
 const Menu = (props) => {
 
     const modal = props.toggle
+    const openModal = props.action
     const darkMode = props.darkMode
     const darkToggle = props.darkToggle
 
@@ -11,8 +12,11 @@ const Menu = (props) => {
         <>
             <main className={!modal ? 'hidden' : 'block'}>
                 <section className='absolute top-0 z-50'>
-                    <nav className={`xl:hidden md:hidden w-56  py-20 h-full gap-20 fixed flex flex-col justify-between items-center px-10 font-inter ${darkMode ? 'dark' : 'bg-[#453ca4]'}`}>
+                    <nav className={`xl:hidden md:hidden w-full  py-20 h-full gap-20 fixed flex flex-col justify-between items-center px-10 font-inter ${darkMode ? 'dark' : 'bg-[#453ca4]'}`}>
                         {/* <p className="text-xl font-bold font-inter text-gray-100 dark:text-cinder-dark-mode">DIVINE <span className="text-gray-100 dark:text-purplelight">EDWIN</span></p> */}
+                        <div onClick={openModal} className='absolute top-10 right-10'>
+                            <i className="fa-solid text-gray-100 fa-x fa-2xl"></i>
+                        </div>
 
                         <ul data-aos="fade-down" className='flex flex-col gap-20 text-xl items-center text-white font-pjs'>
                             <li><a className=" hover:text-white hover:border-purple hover:rounded-lg hover:shadow-xl hover:shadow-violet hover:p-5 hover:font-bold" href="#about">ABOUT</a></li>

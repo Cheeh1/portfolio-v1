@@ -15,7 +15,7 @@ const Navbar = ({darkMode, darkToggle}) => {
             <nav className={`xl:flex md:flex relative hidden justify-between items-center px-10 py-5 font-inter ${darkMode ? 'dark' : ''}`} id='navbar'>
                 <p className="text-lg font-bold font-inter text-cinder-dark dark:text-cinder-dark-mode">DIVINE <span className="text-purplelight">EDWIN</span></p>
 
-                <ul className='flex gap-12 font-sm text-cinder-dark dark:text-white font-inter'>
+                <ul className='flex xl:gap-12 md:gap-5 font-sm text-cinder-dark dark:text-white font-inter'>
                     <li><a className="hover:text-purplelight hover:border hover:rounded-lg hover:shadow-md hover:font-semibold hover:p-3" href="#about">ABOUT</a></li>
                     <li><a className="hover:text-purplelight hover:border hover:rounded-lg hover:shadow-md hover:font-semibold hover:p-3" href="#portfolios">PORTFOLIOS</a></li>
                     <li><a className="hover:text-purplelight hover:border hover:rounded-lg hover:shadow-md hover:font-semibold hover:p-3" href="#blog">BLOG</a></li>
@@ -33,13 +33,16 @@ const Navbar = ({darkMode, darkToggle}) => {
 
             {/* mobile navbar */}
             <nav className={`flex xl:hidden md:hidden justify-around gap-32 py-5 ${darkMode ? 'dark' : ''}`}>
-                <p className="text-lg font-bold text-cinder-dark font-inter">DIVINE <span className="text-purplelight">EDWIN</span></p>
+                <p className="text-lg font-bold text-cinder-dark dark:text-cinder-dark-mode font-inter">DIVINE <span className="text-purplelight">EDWIN</span></p>
                 <div onClick={openModal}>
-                    {!modal ? <i className="fa-solid fa-bars fa-xl"></i> : <i className="fa-solid fa-x fa-xl"></i>}
+                    <i className="fa-solid fa-bars fa-xl"></i>
                 </div>
+                {/* <div onClick={openModal}>
+                    {!modal ? <i className="fa-solid fa-bars fa-xl"></i> : <i className="fa-solid fa-x fa-xl"></i>}
+                </div> */}
             </nav>
 
-            < Menu toggle={modal} darkMode={darkMode} darkToggle={darkToggle}/>
+            < Menu toggle={modal} action={openModal} darkMode={darkMode} darkToggle={darkToggle}/>
         </>
     )
 }
