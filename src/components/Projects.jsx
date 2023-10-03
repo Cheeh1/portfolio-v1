@@ -1,7 +1,7 @@
 import React from "react";
 import { link, crappo, tenzies, moviebox } from "../assets";
 
-const Works = () => {
+const Projects = () => {
     return (
         <>
             <section className="mt-20" id="portfolios">
@@ -92,4 +92,4 @@ const Works = () => {
         </>
     );
 };
-export default Works;
+export default Projects;
