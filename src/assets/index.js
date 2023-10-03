@@ -13,8 +13,7 @@ import firebase from "./icons/firebase.png";
 import crappo from "./images/crappo.webp";
 import tenzies from "./images/tenzies.png";
 import moviebox from "./images/moviebox.webp";
-import hero2 from "./images/Hero-Image-2.webp";
-import hero3 from "./images/Hero-Image-3.webp";
+import divine from "./images/divine.png";
 
 export {
   moon,
@@ -32,6 +31,5 @@ export {
   sun,
   firebase,
   moviebox,
-  hero2,
-  hero3,
+  divine
 };

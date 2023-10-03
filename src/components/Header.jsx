@@ -1,5 +1,5 @@
 import React from "react";
-import { hero2, hero3 } from "../assets";
+import { divine } from "../assets";
 
 const Header = () => {
   return (
@@ -36,7 +36,7 @@ const Header = () => {
           </div>
         </div>
         <div className="xl:w-96">
-          <img src={hero2} alt="Picture" />
+          <img className="rounded-xl" src={divine} alt="Picture" />
         </div>
       </section>
     </>

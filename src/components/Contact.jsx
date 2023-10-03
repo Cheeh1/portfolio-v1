@@ -19,7 +19,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="flex flex-col gap-5 items-center text-center px-10 xl:px-72">
+        <div className="flex flex-col gap-5 items-center text-center py-10 px-10 xl:px-72">
           <h1 className="xl:text-[50px] text-[45px] font-pjs font-bold text-cinder-dark dark:text-cinder-dark-mode">Get In Touch</h1>
           <p className="text-lg font-inter text-cinder-light text-center">I'm currently looking for any new opportunities, my inbox is always open. Whether you have a question,
             want to collaborate on a project or just want to say hi,
