@@ -1,5 +1,5 @@
 import React from "react";
-import { link, crappo, tenzies, moviebox } from "../assets";
+import { link, crappo, tenzies, moviebox, task } from "../assets";
 
 const Projects = () => {
     return (
@@ -15,6 +15,32 @@ const Projects = () => {
                     <p className="text-cinder-dark dark:text-cinder-dark-mode font-bold text-3xl font-pjs">
                         PORTFOLIOS
                     </p>
+                </div>
+
+                <div className="flex flex-col xl:flex-row-reverse mt-20 justify-evenly gap-20 px-28 items-center">
+                    <div className="flex flex-col gap-5 rounded-lg bg-grey dark:bg-gray-300 shadow-xl shadow-gray-300 dark:shadow-black p-5 px-5">
+                        <p className="font-bold text-cinder-light text-lg font-pjs">Personal Project</p>
+                        <p className="text-[30px] xl:text-[40px] font-extrabold text-cinder-dark-mode font-pjsk">Task Manager</p>
+                        <p className="font-semibold text-md xl:text-lg text-cinder-dark font-inter w-72 xl:w-96">
+                            An efficient task management solution that features Authentication with Firebase, storage with Firestore,
+                            logout, account deletion, reset password and Task management like adding,deleting
+                            and marking tasks as completed ensuring an organized to-do list.
+                        </p>
+                        <div className="flex gap-3 text-cinder-light font-medium font-inter">
+                            <p className="border rounded-md border-cinder-light p-1">React.js</p>
+                            <p className="border rounded-md border-cinder-light p-1">Typescript</p>
+                            <p className="border rounded-md border-cinder-light p-1">Tailwind</p>
+                            <p className="border rounded-md border-cinder-light p-1">Firebase</p>
+                            <p className="border rounded-md border-cinder-light p-1">RTK</p>
+                        </div>
+                        <div className="flex gap-5 items-center">
+                            <a href="https://github.com/Cheeh1/Task-manager-app" target="_blank" rel="noreferrer"><i className="fa-brands text-gray-900 fa-github fa-xl"></i></a>
+                            <a href="https://tenzies-web-game.netlify.app/" target="_blank" rel="noreferrer"><img className="w-5" src={link} alt="logo" /></a>
+                        </div>
+                    </div>
+                    <div className="border bg-grey dark:border-gray-700">
+                        <img src={task} alt="project-img" />
+                    </div>
                 </div>
 
                 <div className="flex flex-col xl:flex-row mt-16 justify-evenly gap-20 px-28 items-center">
@@ -86,8 +112,6 @@ const Projects = () => {
                         <img src={tenzies} alt="project-img" />
                     </div>
                 </div>
-
-
             </section>
         </>
     );

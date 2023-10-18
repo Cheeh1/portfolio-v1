@@ -1,5 +1,5 @@
 import React from "react";
-import { firebase, tailwind } from "../assets";
+import { firebase, redux, tailwind, typescript } from "../assets";
 
 const About = () => {
   return (
@@ -20,7 +20,7 @@ const About = () => {
         <div className="flex flex-col md:flex-row md:gap-0 xl:flex-row justify-evenly items-center gap-20 pt-5 pb-20">
           <div>
             <p className="xl:w-96 w-80 font-inter text-cinder-light dark:text-gray-100 leading-8">
-              Hello👋 and welcome to my portfolio! I'm Divine Edwin, a Frontend
+              Hello👋 and welcome to my portfolio! I&apos;m Divine Edwin, a Frontend
               developer who is passionate about creating beautiful, interactive,
               and user-friendly websites. I enjoy researching new design trends
               and technologies as a creative problem solver. My knowledge of
@@ -29,7 +29,7 @@ const About = () => {
               feel free to browse through my projects.
             </p>
           </div>
-          <div className="grid grid-rows-4 grid-cols-3 gap-x-1 xl:gap-x-16 gap-y-10">
+          <div className="grid grid-rows-4 grid-cols-3 gap-x-1 xl:gap-x-16 gap-y-10 items-center">
             <div className="flex flex-col gap-3 text-cinder-dark dark:text-gray-100 font-pjs items-center">
               <i className="fa-brands fa-html5 fa-2xl"></i>
               <p>HTML</p>
@@ -50,6 +50,18 @@ const About = () => {
               <i className="fa-brands fa-git-alt fa-2xl"></i>
               <p>GIT</p>
             </div>
+            <div className="flex flex-col -mt-6 text-cinder-dark dark:text-gray-100 font-pjs items-center">
+              <img src={firebase} className="w-10" alt="firebase" />
+              <p>Firebase</p>
+            </div>
+            <div className="flex flex-col -mt-6 text-cinder-dark dark:text-gray-100 font-pjs items-center">
+              <img src={redux} className="w-10" alt="firebase" />
+              <p>Redux Toolkit</p>
+            </div>
+            <div className="flex flex-col -mt-6 text-cinder-dark dark:text-gray-100 font-pjs items-center">
+              <img src={typescript} className="w-10" alt="firebase" />
+              <p>Typescript</p>
+            </div>
             <div className="flex flex-col gap-3 text-cinder-dark dark:text-gray-100 font-pjs items-center">
               <i className="fa-brands fa-sass fa-2xl"></i>
               <p>SASS</p>
@@ -65,10 +77,6 @@ const About = () => {
             <div className="flex flex-col gap-3 text-cinder-dark dark:text-gray-100 font-pjs items-center">
               <i className="fa-solid fa-terminal fa-2xl"></i>
               <p>TERMINAL</p>
-            </div>
-            <div className="flex flex-col -mt-3 text-cinder-dark dark:text-gray-100 font-pjs items-center">
-              <img src={firebase} className="w-10" alt="firebase" />
-              <p>Firebase</p>
             </div>
           </div>
         </div>

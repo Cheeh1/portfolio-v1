@@ -9,11 +9,14 @@ import pin from "./icons/pin.svg";
 import close from "./icons/x-lg.svg";
 import tailwind from "./icons/tailwindcss.svg";
 import sun from "./icons/sun.svg";
+import redux from "./icons/redux.svg";
+import typescript from "./icons/ts-logo.svg";
 import firebase from "./icons/firebase.png";
 import crappo from "./images/crappo.webp";
 import tenzies from "./images/tenzies.png";
 import moviebox from "./images/moviebox.webp";
 import divine from "./images/divine.png";
+import task from "./images/task manager.png";
 
 export {
   moon,
@@ -31,5 +34,8 @@ export {
   sun,
   firebase,
   moviebox,
-  divine
+  divine,
+  task,
+  typescript,
+  redux
 };
