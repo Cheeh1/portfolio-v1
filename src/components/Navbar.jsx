@@ -2,6 +2,25 @@ import React, { useState } from "react";
 import { moon, sun } from "../assets";
 import Menu from "./Menu";
 
+const Links = [
+  {
+    href: "#about",
+    label: "ABOUT"
+  },
+  {
+    href: "#projects",
+    label: "PROJECTS"
+  },
+  {
+    href: "#blog",
+    label: "BLOG"
+  },
+  {
+    href: "#contact",
+    label: "CONTACT"
+  },
+]
+
 
 const Navbar = ({ darkMode, darkToggle }) => {
   const [modal, setModal] = useState(false);
@@ -13,9 +32,8 @@ const Navbar = ({ darkMode, darkToggle }) => {
   return (
     <>
       <nav
-        className={`flex md:flex relative justify-between items-center px-10 py-5 font-inter ${
-          darkMode ? "dark" : ""
-        }`}
+        className={`flex md:flex relative justify-between items-center px-10 py-5 font-inter ${darkMode ? "dark" : ""
+          }`}
         id="navbar"
       >
         <p className="text-lg font-bold font-inter text-cinder-dark-mode">
@@ -23,38 +41,16 @@ const Navbar = ({ darkMode, darkToggle }) => {
         </p>
 
         <ul className="xl:flex md:flex hidden xl:gap-12 md:gap-5 font-sm text-cinder-dark dark:text-white font-inter">
-          <li>
-            <a
-              className="hover:text-cinder-dark-mode hover:border hover:rounded-lg hover:shadow-md hover:font-semibold hover:p-2"
-              href="#about"
-            >
-              ABOUT
-            </a>
-          </li>
-          <li>
-            <a
-              className="hover:text-cinder-dark-mode hover:border hover:rounded-lg hover:shadow-md hover:font-semibold hover:p-2"
-              href="#portfolios"
-            >
-              PORTFOLIOS
-            </a>
-          </li>
-          <li>
-            <a
-              className="hover:text-cinder-dark-mode hover:border hover:rounded-lg hover:shadow-md hover:font-semibold p-2"
-              href="#blog"
-            >
-              BLOG
-            </a>
-          </li>
-          <li>
-            <a
-              className="hover:text-cinder-dark-mode hover:border hover:rounded-lg hover:shadow-md hover:font-semibold hover:p-2"
-              href="#contact"
-            >
-              CONTACT
-            </a>
-          </li>
+          {Links.map((link, index) => (
+            <li key={index}>
+              <a
+                className="hover:text-cinder-dark-mode hover:border hover:rounded-lg hover:shadow-md hover:font-semibold hover:p-2"
+                href={link.href}
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
         </ul>
 
         <div className="hidden xl:flex md:flex gap-x-5 items-center">
@@ -70,8 +66,9 @@ const Navbar = ({ darkMode, darkToggle }) => {
             )}
           </div>
           <a
-            href="https://drive.google.com/file/d/1XU04hRe1KN2qr1R9MVj39_eUIptkIg4B/view?usp=share_link"
+            href="src/assets/images/resume.pdf"
             target="_blank"
+            download="Divine Edwin Resume.pdf"
             className="border rounded-lg p-2 text-cinder-dark dark:text-gray-100 font-pjs hover:text-cinder-dark-mode dark:hover:text-cinder-dark-mode hover:shadow-md hover:font-semibold" rel="noreferrer"
           >
             Resume

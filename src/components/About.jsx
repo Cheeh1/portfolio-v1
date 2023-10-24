@@ -1,5 +1,59 @@
 import React from "react";
-import { firebase, redux, tailwind, typescript } from "../assets";
+
+const Skills = [
+  {
+    icon: "fa-html5",
+    name: "HTML"
+  },
+  {
+    icon: "fa-css3",
+    name: "CSS"
+  },
+  {
+    icon: "fa-js",
+    name: "JAVASCRIPT"
+  },
+  {
+    icon: "fa-react",
+    name: "REACT"
+  },
+  {
+    icon: "fa-git-alt",
+    name: "GIT"
+  },
+  {
+    icon: "fa-sass",
+    name: "SASS"
+  },
+  {
+    icon: "redux.svg",
+    name: "RTK"
+  },
+  {
+    icon: "ts-logo.svg",
+    name: "TYPESCRIPT"
+  },
+  {
+    icon: "Vitejs.svg",
+    name: "VITE"
+  },
+  {
+    icon: "npm.svg",
+    name: "NPM"
+  },
+  {
+    icon: "firebase.svg",
+    name: "FIREBASE"
+  },
+  {
+    icon: "tailwindcss.svg",
+    name: "TAILWIND"
+  },
+  {
+    icon: "fa-github",
+    name: "GITHUB"
+  },
+]
 
 const About = () => {
   return (
@@ -29,55 +83,14 @@ const About = () => {
               feel free to browse through my projects.
             </p>
           </div>
-          <div className="grid grid-rows-4 grid-cols-3 gap-x-1 xl:gap-x-16 gap-y-10 items-center">
-            <div className="flex flex-col gap-3 text-cinder-dark dark:text-gray-100 font-pjs items-center">
-              <i className="fa-brands fa-html5 fa-2xl"></i>
-              <p>HTML</p>
-            </div>
-            <div className="flex flex-col gap-3 text-cinder-dark dark:text-gray-100 font-pjs items-center">
-              <i className="fa-brands fa-css3 fa-2xl"></i>
-              <p>CSS</p>
-            </div>
-            <div className="flex flex-col gap-3 text-cinder-dark dark:text-gray-100 font-pjs items-center">
-              <i className="fa-brands fa-js fa-2xl"></i>
-              <p>JAVASCRIPT</p>
-            </div>
-            <div className="flex flex-col gap-3 text-cinder-dark dark:text-gray-100 font-pjs items-center">
-              <i className="fa-brands fa-react fa-2xl"></i>
-              <p>REACT</p>
-            </div>
-            <div className="flex flex-col gap-3 text-cinder-dark dark:text-gray-100 font-pjs items-center">
-              <i className="fa-brands fa-git-alt fa-2xl"></i>
-              <p>GIT</p>
-            </div>
-            <div className="flex flex-col -mt-6 text-cinder-dark dark:text-gray-100 font-pjs items-center">
-              <img src={firebase} className="w-10" alt="firebase" />
-              <p>Firebase</p>
-            </div>
-            <div className="flex flex-col -mt-6 text-cinder-dark dark:text-gray-100 font-pjs items-center">
-              <img src={redux} className="w-10" alt="firebase" />
-              <p>Redux Toolkit</p>
-            </div>
-            <div className="flex flex-col -mt-6 text-cinder-dark dark:text-gray-100 font-pjs items-center">
-              <img src={typescript} className="w-10" alt="firebase" />
-              <p>Typescript</p>
-            </div>
-            <div className="flex flex-col gap-3 text-cinder-dark dark:text-gray-100 font-pjs items-center">
-              <i className="fa-brands fa-sass fa-2xl"></i>
-              <p>SASS</p>
-            </div>
-            <div className="flex flex-col -mt-3 text-cinder-dark dark:text-gray-100 font-pjs items-center">
-              <img src={tailwind} className="w-10" alt="logo" />
-              <p>TAILWIND</p>
-            </div>
-            <div className="flex flex-col gap-3 text-cinder-dark dark:text-gray-100 font-pjs items-center">
-              <i className="fa-solid fa-mobile-screen-button fa-2xl"></i>
-              <p>RESPONSIVE</p>
-            </div>
-            <div className="flex flex-col gap-3 text-cinder-dark dark:text-gray-100 font-pjs items-center">
-              <i className="fa-solid fa-terminal fa-2xl"></i>
-              <p>TERMINAL</p>
-            </div>
+          <div className="grid grid-rows-4 grid-cols-3 gap-x-1 xl:gap-x-10 gap-y-5 items-center">
+            {Skills.map((skill,index) => (
+              <div key={index} className="flex flex-col gap-3 text-cinder-dark dark:text-gray-100 font-pjs items-center">
+                {skill.icon.includes(".svg") ? (<img src={`src/assets/icons/${skill.icon}`} className="w-8 -mt-1" alt={skill.name} />) : (<i className={`fa-brands ${skill.icon} fa-2xl`}></i>)}
+                <p>{skill.name}</p>
+              </div>
+            ))}
+           
           </div>
         </div>
       </div>

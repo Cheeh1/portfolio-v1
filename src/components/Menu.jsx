@@ -1,6 +1,25 @@
 import React from "react";
 import { moon, sun } from "../assets";
 
+const Links = [
+  {
+    href: "#about",
+    label: "ABOUT"
+  },
+  {
+    href: "#projects",
+    label: "PROJECTS"
+  },
+  {
+    href: "#blog",
+    label: "BLOG"
+  },
+  {
+    href: "#contact",
+    label: "CONTACT"
+  },
+]
+
 const Menu = (props) => {
   const modal = props.toggle;
   const openModal = props.action;
@@ -22,41 +41,18 @@ const Menu = (props) => {
             </div>
 
             <ul
-              data-aos="fade-down"
               className="flex flex-col gap-20 text-xl items-center text-white font-pjs"
             >
-              <li>
-                <a
-                  className=" hover:text-white hover:border-purple hover:rounded-lg hover:shadow-xl hover:shadow-violet hover:p-5 hover:font-bold"
-                  href="#about"
-                >
-                  ABOUT
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:text-white hover:border-purple hover:rounded-lg hover:shadow-xl hover:shadow-violet hover:p-5 hover:font-bold"
-                  href="#portfolios"
-                >
-                  PORTFOLIOS
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:text-white hover:border-purple hover:rounded-lg hover:shadow-xl hover:shadow-violet hover:p-5 hover:font-bold"
-                  href="#blog"
-                >
-                  BLOG
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:text-white hover:border-purple hover:rounded-lg hover:shadow-xl hover:shadow-violet hover:p-5 hover:font-bold"
-                  href="#contact"
-                >
-                  CONTACT
-                </a>
-              </li>
+              {Links.map((link, index) => (
+                <li key={index}>
+                  <a
+                    className=" hover:text-white hover:border-purple hover:rounded-lg hover:shadow-xl hover:shadow-violet hover:p-5 hover:font-bold"
+                    href={link.href}
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
             </ul>
 
             <div className="flex flex-col items-center gap-10">
@@ -76,9 +72,10 @@ const Menu = (props) => {
                 )}
               </div>
               <a
-                href="https://drive.google.com/file/d/1XU04hRe1KN2qr1R9MVj39_eUIptkIg4B/view?usp=share_link"
+                href="src/assets/images/resume.pdf"
                 target="_blank"
-                className="border rounded-lg p-3 text-2xl font-pjs hover:shadow-xl hover:shadow-violet text-gray-100"
+                download="Divine Edwin Resume.pdf"
+                className="border rounded-lg p-3 text-2xl font-pjs hover:shadow-xl hover:shadow-violet text-gray-100" rel="noreferrer"
               >
                 Resume
               </a>
