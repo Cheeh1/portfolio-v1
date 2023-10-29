@@ -27,27 +27,27 @@ const Skills = [
     name: "SASS"
   },
   {
-    icon: "/src/assets/icons/redux.svg",
+    icon: "redux.svg",
     name: "RTK"
   },
   {
-    icon: "/src/assets/icons/ts-logo.svg",
+    icon: "ts-logo.svg",
     name: "TYPESCRIPT"
   },
   {
-    icon: "/src/assets/icons/Vitejs.svg",
+    icon: "Vitejs.svg",
     name: "VITE"
   },
   {
-    icon: "/src/assets/icons/npm.svg",
+    icon: "npm.svg",
     name: "NPM"
   },
   {
-    icon: "/src/assets/icons/firebase.svg",
+    icon: "firebase.svg",
     name: "FIREBASE"
   },
   {
-    icon: "/src/assets/icons/tailwindcss.svg",
+    icon: "tailwindcss.svg",
     name: "TAILWIND"
   },
   {
@@ -87,7 +87,7 @@ const About = () => {
           <div className="grid grid-rows-4 grid-cols-3 gap-x-1 xl:gap-x-10 gap-y-5 items-center">
             {Skills.map((skill,index) => (
               <div key={index} className="flex flex-col gap-3 text-cinder-dark dark:text-gray-100 font-pjs items-center">
-                {skill.icon.includes(".svg") ? (<img src={skill.icon} className="w-8 -mt-1" alt={skill.name} />) : (<i className={`fa-brands ${skill.icon} fa-2xl`}></i>)}
+                {skill.icon.includes(".svg") ? (<img src={`/images/${skill.icon}`} className="w-8 -mt-1" alt={skill.name} />) : (<i className={`fa-brands ${skill.icon} fa-2xl`}></i>)}
                 <p>{skill.name}</p>
               </div>
             ))}

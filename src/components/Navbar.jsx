@@ -66,7 +66,7 @@ const Navbar = ({ darkMode, darkToggle }) => {
             )}
           </div>
           <a
-            href="src/assets/images/resume.pdf"
+            href="/images/resume.pdf"
             target="_blank"
             download="Divine Edwin Resume.pdf"
             className="border rounded-lg p-2 text-cinder-dark dark:text-gray-100 font-pjs hover:text-cinder-dark-mode dark:hover:text-cinder-dark-mode hover:shadow-md hover:font-semibold" rel="noreferrer"
