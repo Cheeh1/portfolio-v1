@@ -7,7 +7,7 @@ import phone from "./icons/phonecall.svg";
 import pin from "./icons/pin.svg";
 import close from "./icons/x-lg.svg";
 import sun from "./icons/sun.svg";
-import divine from "./images/divine.png";
+// import divine from "./images/divine.png";
 
 
 export {
@@ -20,5 +20,5 @@ export {
   pin,
   close,
   sun,
-  divine
+  // divine
 };

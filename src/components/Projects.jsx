@@ -81,7 +81,7 @@ const Projects = () => {
                                 </div>
                             </div>
                             <div className="border bg-grey dark:border-gray-700">
-                                <img src={`/src/assets/${project.image}`} alt="project-img" />
+                                <img src={`/src/assets/images/${project.image}`} alt="project-img" />
                             </div>
                         </div>
 
