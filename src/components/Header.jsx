@@ -1,6 +1,6 @@
 import React from "react";
 // import { divine } from "../assets";
-import divine from "../assets/images/divine.png"
+import divine from "/images/divine.png"
 
 const Header = () => {
   return (
