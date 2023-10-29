@@ -26,27 +26,27 @@ const Skills = [
     name: "SASS"
   },
   {
-    icon: "/src/assets/icons/redux.svg",
+    icon: "../src/assets/icons/redux.svg",
     name: "RTK"
   },
   {
-    icon: "/src/assets/icons/ts-logo.svg",
+    icon: "../src/assets/icons/ts-logo.svg",
     name: "TYPESCRIPT"
   },
   {
-    icon: "/src/assets/icons/Vitejs.svg",
+    icon: "../src/assets/icons/Vitejs.svg",
     name: "VITE"
   },
   {
-    icon: "/src/assets/icons/npm.svg",
+    icon: "../src/assets/icons/npm.svg",
     name: "NPM"
   },
   {
-    icon: "/src/assets/icons/firebase.svg",
+    icon: "../src/assets/icons/firebase.svg",
     name: "FIREBASE"
   },
   {
-    icon: "/src/assets/icons/tailwindcss.svg",
+    icon: "../src/assets/icons/tailwindcss.svg",
     name: "TAILWIND"
   },
   {
