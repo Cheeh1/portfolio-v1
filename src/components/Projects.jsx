@@ -25,13 +25,23 @@ const Project = [
     },
     {
         type: "Personal Project",
+        title: "DragNdrop Gallery",
+        image: "DragNdrop.png",
+        description: "An interactive image gallery that allows users to search for images by category and, on top of that, rearrange the images however they decide to. I integrated an API to enhance the variety of images available, as well as a drag-and-drop library to handle the drag and drop feature.",
+        skills: "React.js, Typescript, Tailwind, API",
+        github: "https://github.com/Cheeh1/dragNdrop-gallery",
+        web: "https://movieboxsite.netlify.app/",
+        style: true
+    },
+    {
+        type: "Personal Project",
         title: "Crappo",
         image: "crappo.webp",
         description: "A landing page for a cryptocurrency investment firm and what they offer potential customers.",
         skills: "React.js, SCSS",
         github: "https://github.com/Cheeh1/crypto-site",
         web: "https://crappocryptosite.netlify.app/",
-        style: true
+        style: false
     },
     {
         type: "Personal Project",
@@ -41,7 +51,7 @@ const Project = [
         skills: "React.js, Javascript, SCSS",
         github: "https://github.com/Cheeh1/tenzies-game",
         web: "https://tenzies-web-game.netlify.app/",
-        style: false
+        style: true
     }
 ]
 
