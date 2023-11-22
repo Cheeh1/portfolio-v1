@@ -3,7 +3,7 @@ import axios from "axios";
 import { useQuery } from "react-query";
 
 // Fetching articles using the hashnode graphql API
-const endpoint = "https://api.hashnode.com/";
+const endpoint = "https://api.hashnode.com";
 
 const ARTICLE_QUERY = `{
     user(username: "Cheeh") {
@@ -18,6 +18,7 @@ const ARTICLE_QUERY = `{
       }
     }
   }`;
+
 
 const Articles = () => {
   // Using react-query to fetch and cache the data
