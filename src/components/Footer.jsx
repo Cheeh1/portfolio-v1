@@ -6,20 +6,20 @@ const Footer = () => {
       <footer>
         <section className="flex flex-col items-center gap-2 py-10 bg-grey dark:bg-gray-900">
           <div className="flex items-center gap-5">
-            <a href="https://github.com/Cheeh1" target="_blank" rel="noreferrer">
+            <a data-aos="fade-right" data-aos-duration="800" data-aos-delay="700" href="https://github.com/Cheeh1" target="_blank" rel="noreferrer">
               <i className="fa-brands fa-github fa-xl"></i>
             </a>
-            <a href="https://twitter.com/iamcheeh" target="_blank" rel="noreferrer">
+            <a data-aos="fade-right" data-aos-duration="800" data-aos-delay="800" href="https://twitter.com/iamcheeh" target="_blank" rel="noreferrer">
               <i className="fa-brands fa-twitter fa-xl"></i>
             </a>
-            <a href="https://www.linkedin.com/in/divineedwin/" target="_blank" rel="noreferrer">
+            <a data-aos="fade-right" data-aos-duration="800" data-aos-delay="900" href="https://www.linkedin.com/in/divineedwin/" target="_blank" rel="noreferrer">
               <i className="fa-brands fa-linkedin-in fa-xl"></i>
             </a>
-            <a href="https://cheehdevworkshop.hashnode.dev/" target="_blank" rel="noreferrer">
+            <a data-aos="fade-right" data-aos-duration="800" data-aos-delay="1000" href="https://cheehdevworkshop.hashnode.dev/" target="_blank" rel="noreferrer">
               <i className="fa-brands fa-blogger fa-xl"></i>
             </a>
           </div>
-          <div className="flex flex-col gap-6">
+          <div data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="700" className="flex flex-col gap-6">
             <div className="flex items-center gap-3">
               <i className="text-2xl fa-regular fa-envelope"></i>
               <div className="flex flex-col">
@@ -32,7 +32,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <p className="text-cinder-light dark:text-white font-medium font-inter tracking-widest">
+          <p data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="800" className="text-cinder-light dark:text-white font-medium font-inter tracking-widest">
             © 2023 - Divine Edwin
           </p>
           {/* <p className='text-cinder-light font-medium font-inter tracking-widest'>Designed by  -  Caleb Nyong</p> */}

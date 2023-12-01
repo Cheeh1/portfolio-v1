@@ -1,5 +1,6 @@
 import React from "react";
 // import { Skills } from "../data/data";
+import Aos from "aos";
 
 const Skills = [
   {
@@ -57,10 +58,13 @@ const Skills = [
 ]
 
 const About = () => {
+  Aos.init({
+    once: true,
+  });
   return (
     <>
       <div className="bg-grey dark:bg-gray-900" id="about">
-        <div className="flex flex-col py-10 gap-2 items-center">
+        <div className="flex flex-col py-10 gap-2 items-center" data-aos="zoom-in-down" data-aos-duration="800">
           <div className="flex gap-3">
             <p className="border-2 w-4 h-1 my-2.5 text-[#D9D9D9]"></p>
             <p className="text-md font-light text-cinder-light dark:text-gray-100 tracking-widest font-inter">
@@ -74,7 +78,7 @@ const About = () => {
 
         <div className="flex flex-col md:flex-row md:gap-0 xl:flex-row justify-evenly items-center gap-20 pt-5 pb-20">
           <div>
-            <p className="xl:w-96 w-80 font-inter text-cinder-light dark:text-gray-100 leading-8">
+            <p data-aos="zoom-in-down" data-aos-duration="800" data-aos-delay="500" className="xl:w-96 w-80 font-inter text-cinder-light dark:text-gray-100 leading-8">
               Hello👋 and welcome to my portfolio! I&apos;m Divine Edwin, a Frontend
               developer who is passionate about creating beautiful, interactive,
               and user-friendly websites. I enjoy researching new design trends
@@ -84,7 +88,7 @@ const About = () => {
               feel free to browse through my projects.
             </p>
           </div>
-          <div className="grid grid-rows-4 grid-cols-3 gap-x-1 xl:gap-x-10 gap-y-5 items-center">
+          <div data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="500" className="grid grid-rows-4 grid-cols-3 gap-x-1 xl:gap-x-10 gap-y-5 items-center">
             {Skills.map((skill,index) => (
               <div key={index} className="flex flex-col gap-3 text-cinder-dark dark:text-gray-100 font-pjs items-center">
                 {skill.icon.includes(".svg") ? (<img src={`/images/${skill.icon}`} className="w-8 -mt-1" alt={skill.name} />) : (<i className={`fa-brands ${skill.icon} fa-2xl`}></i>)}

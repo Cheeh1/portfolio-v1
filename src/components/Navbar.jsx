@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { moon, sun } from "../assets";
 import Menu from "./Menu";
+import Aos from "aos";
 
 const Links = [
   {
@@ -29,9 +30,11 @@ const Navbar = ({ darkMode, darkToggle }) => {
     setModal(!modal);
   };
 
+  Aos.init();
+
   return (
     <>
-      <nav
+      <nav data-aos="zoom-in" data-aos-duration="800" 
         className={`flex md:flex relative justify-between items-center px-10 py-5 font-inter ${darkMode ? "dark" : ""
           }`}
         id="navbar"
@@ -54,7 +57,7 @@ const Navbar = ({ darkMode, darkToggle }) => {
         </ul>
 
         <div className="hidden xl:flex md:flex gap-x-5 items-center">
-          <div onClick={darkToggle} className="cursor-pointer">
+          <div tabIndex="0" onClick={darkToggle} className="cursor-pointer">
             {!darkMode ? (
               <img src={moon} alt="moon-icon" />
             ) : (

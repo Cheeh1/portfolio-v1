@@ -69,7 +69,7 @@ const Projects = () => {
     return (
         <>
             <section className="mt-20" id="projects">
-                <div className="flex flex-col gap-2 items-center">
+                <div className="flex flex-col gap-2 items-center" data-aos="zoom-in-down" data-aos-duration="800">
                     <div className="flex gap-3">
                         <p className="border-2 w-4 h-1 my-2.5 text-[#D9D9D9]"></p>
                         <p className="text-md font-light text-cinder-light dark:text-white tracking-widest font-inter">
@@ -84,15 +84,15 @@ const Projects = () => {
                 <div>
                     {Project.map((project, index) => (
                         <div key={index} className={`flex flex-col ${project.style ? "xl:flex-row-reverse" : "xl:flex-row"} mt-20 justify-evenly gap-20 px-28 items-center`}>
-                            <div className="flex flex-col gap-5 rounded-lg bg-grey dark:bg-gray-300 shadow-xl shadow-gray-300 dark:shadow-black p-5 px-5">
+                            <div data-aos="zoom-in" data-aos-duration="800" data-aos-delay="500" className="flex flex-col gap-3 rounded-lg bg-grey dark:bg-gray-300 shadow-xl shadow-gray-300 dark:shadow-black p-5 px-5">
                                 <p className="font-bold text-cinder-light text-lg font-pjs">{project.type}</p>
-                                <p className="text-[30px] xl:text-[40px] font-extrabold text-cinder-dark-mode font-pjsk">{project.title}</p>
-                                <p className="font-semibold text-md xl:text-lg text-cinder-dark font-inter w-72 xl:w-96">
+                                <p className="text-2xl xl:text-3xl -mt-2 font-extrabold text-cinder-dark-mode font-pjsk">{project.title}</p>
+                                <p className="font-semibold text-sm -mt-2 xl:text-md text-cinder-dark font-inter w-72 xl:w-96">
                                     {project.description}
                                 </p>
                                 <div className="flex gap-3 text-cinder-light font-medium font-inter">
                                     {project.skills.split(",").map((skill, index) => (
-                                        <p key={index} className="border rounded-md border-cinder-light p-1">{skill}</p>
+                                        <p key={index} className="border rounded-md text-sm xl:text-md border-cinder-light p-1">{skill}</p>
                                     ))}
                                 </div>
                                 <div className="flex gap-5 items-center">
@@ -100,7 +100,7 @@ const Projects = () => {
                                     <a href={project.web} target="_blank" rel="noreferrer"><img className="w-5" src={link} alt="logo" /></a>
                                 </div>
                             </div>
-                            <div className="border bg-grey dark:border-gray-700">
+                            <div data-aos="flip-left" data-aos-duration="800" data-aos-delay="500" className="border bg-grey dark:border-gray-700">
                                 <img src={`/images/${project.image}`} alt="project-img" />
                             </div>
                         </div>
