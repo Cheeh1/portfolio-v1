@@ -6,7 +6,7 @@ const Project = [
     {
         type: "Personal Project",
         title: "Furniture Store",
-        image: "furniture-store.png",
+        image: "furniture-store-edit.png",
         description: "An ecommerce website for furniture lovers. Users can browse furniture, add it to their cart, favorite it, perform authentication and then make safe payments using Paystack payment gateway. It demonstrates my knowledge with React, Typescript, Redux Toolkit as state management, and integrating a payment gateway.",
         skills: "React.js, Typescript, Firebase, RTK",
         github: "https://github.com/Cheeh1/furniture-ecommerce-site",
@@ -81,9 +81,9 @@ const Projects = () => {
                     </p>
                 </div>
 
-                <div>
+                <div className="flex flex-col gap-32 md:gap-20 items-center xl:gap-20 mt-20">
                     {Project.map((project, index) => (
-                        <div key={index} className={`flex flex-col ${project.style ? "xl:flex-row-reverse" : "xl:flex-row"} mt-20 justify-evenly gap-20 px-28 items-center`}>
+                        <div key={index} className={`flex flex-col ${project.style ? "xl:flex-row-reverse md:flex-row-reverse" : "xl:flex-row md:flex-row"} justify-evenly gap-14 md:gap-5 md:mx-5 xl:gap-20 items-center`}>
                             <div data-aos="zoom-in" data-aos-duration="800" data-aos-delay="500" className="flex flex-col gap-3 rounded-lg bg-grey dark:bg-gray-300 shadow-xl shadow-gray-300 dark:shadow-black p-5 px-5">
                                 <p className="font-bold text-cinder-light text-lg font-pjs">{project.type}</p>
                                 <p className="text-2xl xl:text-3xl -mt-2 font-extrabold text-cinder-dark-mode font-pjsk">{project.title}</p>
@@ -100,8 +100,8 @@ const Projects = () => {
                                     <a href={project.web} target="_blank" rel="noreferrer"><img className="w-5" src={link} alt="logo" /></a>
                                 </div>
                             </div>
-                            <div data-aos="flip-left" data-aos-duration="800" data-aos-delay="500" className="border bg-grey dark:border-gray-700">
-                                <img src={`/images/${project.image}`} alt="project-img" />
+                            <div data-aos="flip-left" data-aos-duration="800" data-aos-delay="500"className="w-80 xl:w-full md:w-96" >
+                                <img className="border bg-grey dark:border-gray-700 xl:h-72 md:h-64" src={`/images/${project.image}`} alt="project-img" />
                             </div>
                         </div>
 

@@ -31,9 +31,8 @@ const Menu = (props) => {
       <main className={!modal ? "hidden" : "block"}>
         <section className="absolute top-0 z-50">
           <nav
-            className={`xl:hidden md:hidden w-full  py-20 h-full gap-20 fixed flex flex-col justify-between items-center px-10 font-inter ${
-              darkMode ? "dark" : "bg-[#453ca4]"
-            }`}
+            className={`xl:hidden md:hidden w-full  py-20 h-full gap-20 fixed flex flex-col justify-between items-center px-10 font-inter ${darkMode ? "dark" : "bg-[#453ca4]"
+              }`}
           >
             {/* <p className="text-xl font-bold font-inter text-gray-100 dark:text-cinder-dark-mode">DIVINE <span className="text-gray-100 dark:text-purplelight">EDWIN</span></p> */}
             <div onClick={openModal} className="absolute top-10 right-10">
@@ -48,6 +47,7 @@ const Menu = (props) => {
                   <a
                     className=" hover:text-white hover:border-purple hover:rounded-lg hover:shadow-xl hover:shadow-violet hover:p-5 hover:font-bold"
                     href={link.href}
+                    onClick={openModal}
                   >
                     {link.label}
                   </a>
@@ -62,12 +62,14 @@ const Menu = (props) => {
                     className="w-8 bg-white p-1 rounded-xl"
                     src={moon}
                     alt="moon-icon"
+                    onClick={openModal}
                   />
                 ) : (
                   <img
                     src={sun}
                     className="w-8 bg-white p-1 rounded-xl"
                     alt="sun-icon"
+                    onClick={openModal}
                   />
                 )}
               </div>
@@ -75,6 +77,7 @@ const Menu = (props) => {
                 href="src/assets/images/resume.pdf"
                 target="_blank"
                 download="Divine Edwin Resume.pdf"
+                onClick={openModal}
                 className="border rounded-lg p-3 text-2xl font-pjs hover:shadow-xl hover:shadow-violet text-gray-100" rel="noreferrer"
               >
                 Resume
