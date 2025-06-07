@@ -23,6 +23,7 @@ const Links = [
 ]
 
 
+// eslint-disable-next-line react/prop-types
 const Navbar = ({ darkMode, darkToggle }) => {
   const [modal, setModal] = useState(false);
 
@@ -47,7 +48,7 @@ const Navbar = ({ darkMode, darkToggle }) => {
           {Links.map((link, index) => (
             <li key={index}>
               <a
-                className="hover:text-cinder-dark-mode hover:border hover:rounded-lg hover:shadow-md hover:font-semibold hover:p-2"
+                className="hover:text-cinder-dark-mode transition-colors duration-200 relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-1/2 after:bg-cinder-dark-mode after:transition-all after:duration-300 hover:after:w-full hover:after:left-0"
                 href={link.href}
               >
                 {link.label}
@@ -69,7 +70,7 @@ const Navbar = ({ darkMode, darkToggle }) => {
             )}
           </div>
           <a
-            href="/images/resume.pdf"
+            href="/images/divineResume.pdf"
             target="_blank"
             download="Divine Edwin Resume.pdf"
             className="border rounded-lg p-2 text-cinder-dark dark:text-gray-100 font-pjs hover:text-cinder-dark-mode dark:hover:text-cinder-dark-mode hover:shadow-md hover:font-semibold" rel="noreferrer"

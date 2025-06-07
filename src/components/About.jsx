@@ -55,6 +55,10 @@ const Skills = [
     icon: "fa-github",
     name: "GITHUB"
   },
+  {
+    icon: "nextjs-icon.svg",
+    name: "NEXT.JS"
+  },
 ]
 
 const About = () => {
@@ -79,13 +83,10 @@ const About = () => {
         <div className="flex flex-col md:flex-row md:gap-0 xl:flex-row justify-evenly items-center gap-20 pt-5 pb-20">
           <div>
             <p data-aos="zoom-in-down" data-aos-duration="800" data-aos-delay="500" className="xl:w-96 w-80 font-inter text-cinder-light dark:text-gray-100 leading-8">
-              Hello👋 and welcome to my portfolio! I&apos;m Divine Edwin, a Frontend
-              developer who is passionate about creating beautiful, interactive,
-              and user-friendly websites. I enjoy researching new design trends
-              and technologies as a creative problem solver. My knowledge of
-              frontend development extends beyond coding. I also create
-              technical content. Thank you for visiting my portfolio! Please
-              feel free to browse through my projects.
+            Hello 👋 and welcome to my portfolio!
+            I&apos;m Divine Edwin, a Frontend Developer passionate about building fast, scalable, and user-friendly web applications. <br /> I combine clean, maintainable code with modern technologies like React, Next.js, JavaScript TypeScript, and Tailwind CSS to create high-performing interfaces that deliver great user experiences.
+            <br />Beyond aesthetics, I focus on performance optimization, code architecture, and scalability. Ensuring that the solutions I build grow well with users. 
+            Thank you for visiting my portfolio!
             </p>
           </div>
           <div data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="500" className="grid grid-rows-4 grid-cols-3 gap-x-1 xl:gap-x-10 gap-y-5 items-center">

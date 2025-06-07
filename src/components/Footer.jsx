@@ -33,7 +33,7 @@ const Footer = () => {
             </div>
           </div>
           <p data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="800" className="text-cinder-light dark:text-white font-medium font-inter tracking-widest">
-            © 2023 - Divine Edwin
+            © {new Date().getFullYear()} - Divine Edwin
           </p>
           {/* <p className='text-cinder-light font-medium font-inter tracking-widest'>Designed by  -  Caleb Nyong</p> */}
         </section>

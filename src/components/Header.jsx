@@ -1,6 +1,6 @@
 import React from "react";
 // import { divine } from "../assets";
-import divine from "/images/divine.png"
+import divine from "/images/divine.jpg"
 import Aos from "aos";
 
 const Header = () => {
@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <>
-      <section className="flex gap-20 flex-col xl:flex-row md:flex-row my-28 justify-around items-center">
+      <section className="flex gap-y-20 flex-col xl:flex-row md:flex-row my-28 justify-around items-center">
         <div className="flex flex-col gap-5 mx-20 xl:mx-0">
           <div data-aos="fade-right" data-aos-duration="800" data-aos-delay="200" className="flex gap-3">
             <p className="border-2 w-4 h-1 my-2 text-[#D9D9D9]"></p>
@@ -23,9 +23,9 @@ const Header = () => {
             Divine Edwin.
           </h1>
           <p data-aos="fade-right" data-aos-duration="800" data-aos-delay="600" className="text-md w-80 xl:w-96 leading-8 font-inter">
-            Creative frontend developer, who specializes in designing visually
-            appealing and intuitive user interfaces that improve user
-            experience. Proficient in Html, Tailwind Css, Javascript and React.
+          A Frontend Developer focused on building fast, scalable, and maintainable web applications.    
+          I care deeply about performance, clean architecture, and delivering seamless user experiences. <br /> Skilled in React, Next.js, JavaScript, TypeScript, and Tailwind CSS, 
+
           </p>
           <div  className="flex items-center gap-5">
             <a data-aos="fade-right" data-aos-duration="800" data-aos-delay="800" href="https://github.com/Cheeh1" target="_blank" rel="noreferrer">
@@ -42,7 +42,7 @@ const Header = () => {
             </a>
           </div>
         </div>
-        <div className="xl:w-96" data-aos="flip-right" data-aos-duration="800" data-aos-delay="900">
+        <div className="xl:w-96 w-80" data-aos="flip-right" data-aos-duration="800" data-aos-delay="900">
           <img className="rounded-xl" src={divine} alt="Picture" />
         </div>
       </section>

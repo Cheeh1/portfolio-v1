@@ -3,21 +3,34 @@ import axios from "axios";
 import { useQuery } from "react-query";
 
 // Fetching articles using the hashnode graphql API
-const endpoint = "https://api.hashnode.com";
+const endpoint = "https://gql.hashnode.com";
 
-const ARTICLE_QUERY = `{
-    user(username: "Cheeh") {
-      publication {
-        posts(page: 0) {
-          title
-          brief
-          slug
-          coverImage
-          dateAdded
+const ARTICLE_QUERY = `
+  query GetUserArticles($username: String!) {
+    user(username: $username) {
+      publications(first: 1) {
+        edges {
+          node {
+            posts(first: 10) {
+              edges {
+                node {
+                  title
+                  brief
+                  slug
+                  coverImage {
+                    url
+                  }
+                  publishedAt
+                  url
+                }
+              }
+            }
+          }
         }
       }
     }
-  }`;
+  }
+`;
 
 
 const Articles = () => {
@@ -28,6 +41,9 @@ const Articles = () => {
           method: "POST",
           data: {
               query: ARTICLE_QUERY,
+              variables: {
+                username: "Cheeh"
+              }
           },
       });
       return response.data.data;
@@ -53,58 +69,43 @@ const Articles = () => {
         </div>
 
         {/* Using flex wrap for layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 place-items-center py-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-20 place-items-center py-8">
           {/* Mapping through the fetched articles */}
-          {data.user.publication.posts?.map((post, i) => (
-            <div
-              key={i}
-              className="flex flex-col gap-5 border dark:border-gray-700 rounded-md"
-            >
-              <div className="flex flex-col gap-3">
-                <div>
-                  <img
-                    className="w-80 xl:w-96"
-                    src={post.coverImage}
-                    alt="blog-img-1"
-                  />
-                </div>
-                <div className="flex flex-col gap-2 pl-5">
-                  <h3 className="text-sm w-72 xl:w-full xl:text-md font-bold text-cinder-dark dark:text-cinder-dark-mode font-pjs">
-                    {post.title}
-                  </h3>
-                  <p className="text-cinder-light dark:text-white text-sm w-72 xl:w-80 font-inter">{`${post.brief}`}</p>
-                </div>
-              </div>
-              <a
-                className="text-cinder-light dark:text-gray-400 text-xs font-inter font-semibold text-center pb-5"
-                href={`https://cheehdevworkshop.hashnode.dev/${post.slug}`}
-                target="_blank" rel="noreferrer"
+          {data?.user?.publications?.edges?.[0]?.node?.posts?.edges?.map((postEdge, i) => {
+            const post = postEdge.node;
+            return (
+              <div
+                key={i}
+                className="flex flex-col gap-5 border dark:border-gray-700 rounded-md"
               >
-                Continue Reading
-              </a>
-            </div>
-          ))}
+                <div className="flex flex-col gap-3">
+                  <div>
+                    <img
+                      className="w-80 xl:w-96"
+                      src={post.coverImage?.url}
+                      alt="blog-img-1"
+                    />
+                  </div>
+                  <div className="flex flex-col gap-2 pl-5">
+                    <h3 className="text-sm w-72 xl:w-full xl:text-md font-bold text-cinder-dark dark:text-cinder-dark-mode font-pjs">
+                      {post.title}
+                    </h3>
+                    <p className="text-cinder-light dark:text-white text-sm w-72 xl:w-80 font-inter">{post.brief}</p>
+                  </div>
+                </div>
+                <a
+                  className="text-cinder-light dark:text-gray-400 text-xs font-inter font-semibold text-center pb-5"
+                  href={post.url}
+                  target="_blank" rel="noreferrer"
+                >
+                  Continue Reading
+                </a>
+              </div>
+            );
+          })}
         </div>
 
-        {/* Using Grid layout */}
-        {/* <div className='flex justify-center'>
-                    <div className='grid md:grid-rows-2 md:grid-cols-2 grid-rows-3 items-center gap-10'>
-                        {data.user.publication.posts?.map((post, i) => (
-                            <div key={i} className='flex flex-col gap-5 border rounded-sm w-80'>
-                                <div className='flex flex-col gap-3'>
-                                    <div>
-                                        <img className='w-80 xl:w-96' src={post.coverImage} alt='blog-img-1' />
-                                    </div>
-                                    <div className='flex flex-col gap-2 pl-5'>
-                                        <h3 className='text-sm xl:text-md font-bold text-cinder-dark font-pjs'>{post.title}</h3>
-                                        <p className='text-cinder-light text-sm w-72 xl:w-72 font-inter'>{`${post.brief}`}</p>
-                                    </div>
-                                </div>
-                                <a className='text-cinder-light text-xs font-inter font-semibold text-center pb-5' href={`https://cheehdevworkshop.hashnode.dev/${post.slug}`} target='_blank'>Continue Reading</a>
-                            </div>
-                        ))}
-                    </div>
-                </div> */}
+       
       </section>
     </>
   );
