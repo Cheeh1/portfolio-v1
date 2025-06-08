@@ -7,21 +7,31 @@ const Project = [
         type: "Company Project",
         title: "EngageAm ",
         image: "engageam.png",
-        description: "EngageAm is a community-driven platform designed to help you grow your social media engagement while rewarding genuine actions. Whether you’re looking for likes, comments, views, or followers. It uses a point based system to reward users for their actions and also points can be used to gain social media engagement.",
-        skills: "Next.js, Typescript, Tailwind, Zustand",
+        description: "EngageAm is a community-driven platform that helps users grow their social media engagement by rewarding genuine interactions. Whether you're looking for likes, comments, views, or followers, EngageAm uses a point-based system where users earn points for engaging with others and spend those points to receive engagement in return. I was responsible for developing the frontend, ensuring a smooth, responsive, and user-friendly experience.",
+        skills: "Next.js, Typescript, PHP, MySql",
         github: "https://github.com/Cheeh1",
         web: "https://engageam.app/",
         style: true
     },
     {
         type: "Personal Project",
+        title: "ParkAccess",
+        image: "parkaccess.png",
+        description: "ParkAccess is a full-stack web application that streamline the process of booking and managing parking spaces. Users can easily view available parking slots in real time, make reservations, and track their booking history. On the other end, companies can register parking lots, set custom pricing, monitor bookings, and gain insights through payment analytics. I handled both the frontend and backend development, ensuring the system is secured, scalable, user-friendly, and optimized for performance.",
+        skills: "React, Typescript, Express, Mongodb",
+        github: "https://github.com/Cheeh1/parkaccess-urban-reserve",
+        web: "https://parkaccess-urban-reserve.vercel.app/",
+        style: false
+    },
+    {
+        type: "Personal Project",
         title: "Furniture Store",
         image: "furniture-store-edit.png",
-        description: "An ecommerce website for furniture lovers. Users can browse furniture, add it to their cart, favorite it, perform authentication and then make safe payments using Paystack payment gateway. It demonstrates my knowledge with React, Typescript, Redux Toolkit as state management, and integrating a payment gateway.",
+        description: "This is an eCommerce website built for furniture enthusiasts, offering a smooth and user-friendly shopping experience. Users can browse through a curated selection of furniture, add items to their cart or favorites, create accounts, and securely complete purchases using the Paystack payment gateway. The project showcases my proficiency in building interactive and dynamic frontend applications, with features like authentication, state management using Redux Toolkit, and seamless payment integration.",
         skills: "React, Typescript, Firebase, RTK",
         github: "https://github.com/Cheeh1/furniture-ecommerce-site",
         web: "https://furniture-ecommerce-store.netlify.app/",
-        style: false
+        style: true
     },
     // {
     //     type: "Personal Project",
@@ -37,11 +47,11 @@ const Project = [
         type: "Personal Project",
         title: "MovieBox",
         image: "moviebox.webp",
-        description: "A movie website where users can search through a large database of movies, get extensive information about each movie, watch trailers of them,and save their favourites.I used my knowledge on API integration and Localstorage to achieve this.",
+        description: "This movie website allows users to explore a vast database of films, search for specific titles, view detailed information about each movie, watch trailers, and save their favorites for quick access. The project highlights my ability to integrate third-party APIs and effectively manage user preferences using LocalStorage, creating a smooth and engaging browsing experience",
         skills: "React, Javascript, Tailwind, TMDB API",
         github: "https://github.com/Cheeh1/movie-box",
         web: "https://movieboxsite.netlify.app/",
-        style: true
+        style: false
     },
     // {
     //     type: "Personal Project",
