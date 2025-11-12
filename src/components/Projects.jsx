@@ -2,47 +2,55 @@ import React, { useState } from "react";
 import link from "../assets/icons/link.png"
 
 const Project = [
-
-    {
-        type: "Company Project",
-        title: "EngageAm ",
-        images: ["engageam.png", "engageam.png", "engageam.png"],
-        description: "EngageAm is a community-driven platform that helps users grow their social media engagement by rewarding genuine interactions. Whether you're looking for likes, comments, views, or followers, EngageAm uses a point-based system where users earn points for engaging with others and spend those points to receive engagement in return. I was responsible for developing the frontend, ensuring a smooth, responsive, and user-friendly experience.",
-        skills: "Next.js, Typescript, PHP, MySql",
+{
+        type: "Personal Project",
+        title: "Digital Archive",
+        images: ["archive/digital5.png", "archive/digital6.png", "archive/digital7.png", "archive/digital1.png", "archive/digital2.png", "archive/digital3.png", "archive/digital4.png", ],
+        description: "Digital Archive is a web-based project management and archiving system built for higher institutions to streamline final year project supervision. It allows admins to create departments and coordinators, while coordinators can add students and supervisors, and assign students based on supervision limits. Supervisors can review project topics and files, upload corrections, and send feedback or notifications to students. Students can easily submit project topics, upload files for review, and receive updates. The platform enhances communication, organization, and transparency in managing final year projects, ensuring a seamless and efficient academic workflow.",
+        skills: "Next.js, Typescript, Nestjs, MySql",
         github: "https://github.com/Cheeh1",
-        web: "https://engageam.app/",
-        style: true
+        web: "https://digital-archive-pied.vercel.app/",
+        
     },
     {
         type: "Personal Project",
         title: "ParkAccess",
-        images: ["parkaccess.png"],
+        images: ["parkaccess/parkaccess1.png", "parkaccess/parkaccess2.png", "parkaccess/parkaccess.png", "parkaccess/parkaccess4.png", "parkaccess/parkaccess5.png", "parkaccess/parkaccess6.png", "parkaccess/parkaccess7.png", "parkaccess/parkaccess8.png"],
         description: "ParkAccess is a full-stack web application that streamline the process of booking and managing parking spaces. Users can easily view available parking slots in real time, make reservations, and track their booking history. On the other end, companies can register parking lots, set custom pricing, monitor bookings, and gain insights through payment analytics. I handled both the frontend and backend development, ensuring the system is secured, scalable, user-friendly, and optimized for performance.",
         skills: "React, Typescript, Express, Mongodb",
         github: "https://github.com/Cheeh1/parkaccess-urban-reserve",
         web: "https://parkaccess-urban-reserve.vercel.app/",
-        style: false
+       
+    },
+    {
+        type: "Company Project",
+        title: "EngageAm ",
+        images: ["engageAm/engageAm1.png", "engageAm/engageAm2.png", "engageAm/engageam.png", "engageAm/engageAm3.png", "engageAm/engageAm4.png", "engageAm/engageAm5.png", "engageAm/engageAm6.png"],
+        description: "EngageAm is a community-driven platform that helps users grow their social media engagement by rewarding genuine interactions. Whether you're looking for likes, comments, views, or followers, EngageAm uses a point-based system where users earn points for engaging with others and spend those points to receive engagement in return. I was responsible for developing the frontend, ensuring a smooth, responsive, and user-friendly experience.",
+        skills: "Next.js, Typescript, PHP, MySql",
+        github: "https://github.com/Cheeh1",
+        web: "https://engageam.app/",
+       
     },
     {
         type: "Personal Project",
         title: "Furniture Store",
-        images: ["furniture-store-edit.png"],
+        images: ["furniture/furniture1.png", "furniture/furniture2.png", "furniture-store-edit.png", "furniture/furniture3.png", ],
         description: "This is an eCommerce website built for furniture enthusiasts, offering a smooth and user-friendly shopping experience. Users can browse through a curated selection of furniture, add items to their cart or favorites, create accounts, and securely complete purchases using the Paystack payment gateway. The project showcases my proficiency in building interactive and dynamic frontend applications, with features like authentication, state management using Redux Toolkit, and seamless payment integration.",
         skills: "React, Typescript, Firebase, RTK",
         github: "https://github.com/Cheeh1/furniture-ecommerce-site",
         web: "https://furniture-ecommerce-store.netlify.app/",
-        style: true
+        
     },
- 
     {
         type: "Personal Project",
         title: "MovieBox",
-        images: ["moviebox.webp"],
+        images: ["moviebox.webp", "moviebox/moviebox1.png", "moviebox/moviebox2.png"],
         description: "This movie website allows users to explore a vast database of films, search for specific titles, view detailed information about each movie, watch trailers, and save their favorites for quick access. The project highlights my ability to integrate third-party APIs and effectively manage user preferences using LocalStorage, creating a smooth and engaging browsing experience",
         skills: "React, Javascript, Tailwind, TMDB API",
         github: "https://github.com/Cheeh1/movie-box",
         web: "https://movieboxsite.netlify.app/",
-        style: false
+      
     },
    
 ]
@@ -164,7 +172,7 @@ const ProjectCard = ({ project, index }) => {
                             href={project.github} 
                             target="_blank" 
                             rel="noreferrer"
-                            className="flex items-center gap-2 text-cinder-dark dark:text-gray-100 hover:text-cinder-dark-mode dark:hover:text-purple-400 transition-colors duration-200"
+                            className="flex items-center gap-2 text-cinder-dark dark:text-gray-100 hover:text-cinder-dark-mode dark:hover:text-blue-400 transition-colors duration-200"
                         >
                             <i className="fa-brands fa-github fa-lg"></i>
                             <span className="text-sm font-medium font-inter">Code</span>
@@ -173,7 +181,7 @@ const ProjectCard = ({ project, index }) => {
                             href={project.web} 
                             target="_blank" 
                             rel="noreferrer"
-                            className="flex items-center gap-2 text-cinder-dark dark:text-gray-100 hover:text-cinder-dark-mode dark:hover:text-purple-400 transition-colors duration-200"
+                            className="flex items-center gap-2 text-cinder-dark dark:text-gray-100 hover:text-cinder-dark-mode dark:hover:text-blue-400 transition-colors duration-200"
                         >
                             <img className="w-4 h-4" src={link} alt="link" />
                             <span className="text-sm font-medium font-inter">Live Demo</span>
@@ -202,7 +210,7 @@ const Projects = () => {
                     </p>
                 </div>
 
-                <div className="max-w-[1600px] mx-auto px-6 mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="max-w-[1600px] mx-auto px-6 mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8">
                     {Project.map((project, index) => (
                         <ProjectCard key={index} project={project} index={index} />
                     ))}

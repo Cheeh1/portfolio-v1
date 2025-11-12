@@ -55,7 +55,7 @@ const Header = () => {
                 data-aos="fade-right" 
                 data-aos-duration="800" 
                 data-aos-delay="700"
-                className="flex flex-wrap gap-3 text-sm font-medium text-cinder-light dark:text-gray-300 font-inter"
+                className="flex flex-wrap gap-3 text-sm font-medium text-cinder-light dark:text-gray-100 font-inter"
               >
                 <span className="px-4 py-2 bg-white dark:bg-cinder-dark-mode rounded-full shadow-sm border border-gray-200">React</span>
                 <span className="px-4 py-2 bg-white dark:bg-cinder-dark-mode rounded-full shadow-sm border border-gray-200">Next.js</span>
@@ -115,7 +115,7 @@ const Header = () => {
               >
                 <a 
                   href="#contact"
-                  className="px-8 py-3 bg-cinder-dark-mode text-white font-medium font-inter rounded-lg shadow-lg hover:shadow-xl hover:bg-opacity-90 transform hover:-translate-y-1 transition-all duration-300"
+                  className="sm:px-8 px-6 py-3 bg-cinder-dark-mode text-white font-medium font-inter rounded-lg shadow-lg hover:shadow-xl hover:bg-opacity-90 transform hover:-translate-y-1 transition-all duration-300"
                 >
                   Get In Touch
                 </a>
@@ -123,7 +123,7 @@ const Header = () => {
                   href="/images/divineResume.pdf"
                   target="_blank"
                   download="Divine Edwin Resume.pdf"
-                  className="px-8 py-3 bg-white dark:bg-gray-700 text-cinder-dark dark:text-gray-100 font-medium font-inter rounded-lg shadow-lg hover:shadow-xl border-2 border-cinder-dark-mode transform hover:-translate-y-1 transition-all duration-300"
+                  className="sm:px-8 px-6 py-3 bg-white dark:bg-gray-700 text-cinder-dark dark:text-gray-100 font-medium font-inter rounded-lg shadow-lg hover:shadow-xl border-2 border-cinder-dark-mode transform hover:-translate-y-1 transition-all duration-300"
                 >
                   Download CV
                 </a>
@@ -139,11 +139,11 @@ const Header = () => {
               <div className="absolute -inset-4 bg-gradient-to-r from-cinder-dark-mode to-blue-600 rounded-2xl blur-2xl opacity-20 dark:opacity-30 animate-pulse"></div>
               <div className="relative">
                 <img 
-                  className="rounded-2xl shadow-2xl w-80 h-80 md:w-96 md:h-96 lg:w-full lg:h-[450px] object-contain border-4 border-white dark:border-gray-700" 
+                  className="rounded-2xl shadow-2xl w-full md:h-96 lg:h-[450px] object-contain border-4 border-white dark:border-gray-700" 
                   src={divine} 
                   alt="Divine Edwin"
                 />
-                <div className="absolute -bottom-6 -right-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 border-2 border-cinder-dark-mode dark:border-cinder-dark-mode">
+                <div className="absolute -bottom-6 right-0 sm:-right-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg p-4 border-2 border-cinder-dark-mode dark:border-cinder-dark-mode">
                   <p className="text-sm font-medium text-cinder-dark dark:text-gray-100 font-inter">
                     Available for work
                   </p>

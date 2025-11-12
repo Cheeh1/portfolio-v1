@@ -121,7 +121,7 @@ const About = () => {
                   data-aos-delay={index * 50}
                   className="flex flex-col gap-3 items-center justify-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 group"
                 >
-                  <div className="text-cinder-dark dark:text-gray-100 group-hover:text-cinder-dark-mode dark:group-hover:text-purple-400 transition-colors duration-300">
+                  <div className="text-cinder-dark dark:text-gray-100 group-hover:text-cinder-dark-mode dark:group-hover:text-blue-400 transition-colors duration-300">
                     {skill.icon.includes(".svg") ? (
                       <img 
                         src={`/images/${skill.icon}`} 
