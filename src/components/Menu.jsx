@@ -1,10 +1,15 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { moon, sun } from "../assets";
 
 const Links = [
   {
     href: "#about",
     label: "ABOUT"
+  },
+  {
+    href: "#experience",
+    label: "EXPERIENCE"
   },
   {
     href: "#projects",
@@ -89,4 +94,12 @@ const Menu = (props) => {
     </>
   );
 };
+
+Menu.propTypes = {
+  toggle: PropTypes.bool,
+  action: PropTypes.func.isRequired,
+  darkMode: PropTypes.bool,
+  darkToggle: PropTypes.func
+};
+
 export default Menu;
