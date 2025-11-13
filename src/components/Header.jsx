@@ -28,7 +28,7 @@ const Header = () => {
                   data-aos-delay="400" 
                   className="text-5xl md:text-6xl lg:text-7xl font-bold font-pjs mb-4"
                 >
-                  <span className="text-cinder-dark dark:text-gray-100">Hi, I&apos;m </span>
+                  <span className="text-cinder-dark dark:text-gray-100">Hello, I&apos;m </span>
                   <span className="text-cinder-dark-mode dark:text-cinder-dark-mode">
                     Divine Edwin
                   </span>
